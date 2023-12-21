@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*missing alt attribute*/
+img:not([alt]) {
+  outline: 0.5rem dashed red;
+  outline-offset: 0.5rem;
+}
+
+/*empty alt attribute*/
+img[alt=""] {
+  outline: 0.5rem solid blue;
+  outline-offset: 1.5rem;
+}

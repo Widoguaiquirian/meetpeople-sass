@@ -1,0 +1,33 @@
+.main-section {
+  background: rgba(181, 181, 181, 0.208);
+  padding: 5rem 0;
+  text-align: center;
+
+  &-row {
+    display: flex;
+
+    &-block {
+      width: 50%;
+      text-align: justify;
+      padding: 0 4rem;
+      margin: 2rem 0;
+
+      &-p {
+        margin: 0;
+      }
+
+      &-p:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+
+      // image
+
+      figure {
+        background: red;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}

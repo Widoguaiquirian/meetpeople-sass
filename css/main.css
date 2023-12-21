@@ -1,0 +1,249 @@
+/* --xl-font: 3rem;
+   --lg-font: 2.5rem;
+   --md-font: 2rem;
+   --sm-font: 1.8rem;
+   --xs-font: 1.6rem; */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #777;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.secondary-heading {
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #ec672d, #de4b64);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+  margin-bottom: 3rem;
+}
+.secondary-heading:hover {
+  cursor: pointer;
+  transform: skewY(2deg) skewX(2deg) scale(1.2);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.185);
+}
+
+.tertiary-heading {
+  font-size: clamp(1.6rem, 2vw, 2.2rem);
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Son clases que modifican a un elemento */
+/* Por ejemplo, quiero asignar ciertos estilo a un elemento puntual */
+/* tooltip
+algun detalle puntual de texto
+centrar en flex
+ */
+.uti-fle-cen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uti-pos-cen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.uti-svg-ico {
+  align-items: center;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  line-height: 0;
+  width: 3rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*missing alt attribute*/
+img:not([alt]) {
+  outline: 0.5rem dashed red;
+  outline-offset: 0.5rem;
+}
+
+/*empty alt attribute*/
+img[alt=""] {
+  outline: 0.5rem solid blue;
+  outline-offset: 1.5rem;
+}
+
+/* Hero section animation */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Hero section buttons */
+.header-center-btn {
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: white;
+  background: #2f4858;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0.5rem;
+  transition: 0.3s;
+}
+.header-center-btn:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+  box-shadow: 0.1rem 0.4rem 0.3rem rgba(0, 0, 0, 0.227);
+}
+.header-center-btn:active {
+  transform: scale(0.98);
+}
+.header-center-btn:last-child {
+  padding: 0.5rem 1.5rem;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: #de4b64;
+  background: transparent;
+  border: 0.1rem solid #2f4858;
+  transition: 0.3s;
+}
+.header-center-btn:last-child:hover {
+  background-color: #de4b64;
+  color: white;
+  transition: 0.3s;
+}
+
+.main-section-row-btn {
+  color: #2f4858;
+  font-weight: bold;
+  padding: 0.4rem 0.7rem;
+  border-bottom: 2px solid #2f4858;
+  transition: all 0.3s;
+  display: inline-block;
+}
+.main-section-row-btn:hover {
+  background-color: #2f4858;
+  color: white;
+  border-bottom: none;
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.26);
+}
+.main-section-row-btn:active {
+  transform: scale(0.98);
+}
+
+.main {
+  max-width: 160rem;
+  margin: 0 auto;
+}
+
+.header {
+  height: 80vh;
+  background-image: linear-gradient(to right bottom, rgba(236, 102, 45, 0.3), hsla(350, 69%, 58%, 0.3)), url(/images/hero-large.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.header-logo {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+.header-logo-svg {
+  height: 3.5rem;
+}
+.header-center {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  border-radius: 0.5rem;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  width: 45rem;
+  max-width: 90%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.744);
+  animation: moveInLeft 0.3s ease-in;
+}
+.header-center-title {
+  color: #2f4858;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: 0.8rem;
+  margin-right: -1rem;
+  display: block;
+}
+.header-center-title span {
+  display: block;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  letter-spacing: normal;
+  letter-spacing: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.main-section {
+  background: rgba(181, 181, 181, 0.208);
+  padding: 5rem 0;
+  text-align: center;
+}
+.main-section-row {
+  display: flex;
+}
+.main-section-row-block {
+  width: 50%;
+  text-align: justify;
+  padding: 0 4rem;
+  margin: 2rem 0;
+}
+.main-section-row-block-p {
+  margin: 0;
+}
+.main-section-row-block-p:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.main-section-row-block figure {
+  background: red;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}

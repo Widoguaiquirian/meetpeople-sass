@@ -1,0 +1,55 @@
+.header {
+  height: 80vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(236, 102, 45, 0.3),
+      hsla(350, 69%, 58%, 0.3)
+    ),
+    url(/images/hero-large.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  &-logo {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+
+    &-svg {
+      height: 3.5rem;
+    }
+  }
+
+  &-center {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    border-radius: 0.5rem;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    width: 45rem;
+    max-width: 90%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.744);
+    animation: moveInLeft 0.3s ease-in;
+
+    &-title {
+      color: $quaternary-color;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: 0.8rem;
+      margin-right: -1rem;
+      display: block;
+
+      span {
+        display: block;
+        font-size: clamp(1.5rem, 2.5vw, 2rem);
+        letter-spacing: normal;
+        letter-spacing: 0.5rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
