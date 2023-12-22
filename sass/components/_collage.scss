@@ -2,24 +2,43 @@
   margin: 0 auto;
   text-align: center;
   position: relative;
+  border: 1px solid red;
+  height: 30rem;
 
   &-picture {
-    max-width: 50%;
+    width: 50%;
     border-radius: 5px;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.308);
     position: absolute;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 2px 2px 2px 2px $primary-color;
 
     &:nth-child(1) {
-      top: -2rem;
-      left: 4rem;
+      top: 1%;
+      left: 5%;
     }
+
     &:nth-child(2) {
-      right: 3rem;
-      top: 2rem;
+      right: 5%;
+      top: 15%;
     }
+
     &:nth-child(3) {
-      top: 10rem;
-      left: 15rem;
+      top: 40%;
+      left: 20%;
+    }
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.493);
+      z-index: 9;
     }
   }
+}
+
+.section-row-block-collage:hover
+  .section-row-block-collage-picture:not(:hover) {
+  transform: scale(0.98);
+  filter: blur(2px);
 }
