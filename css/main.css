@@ -211,7 +211,7 @@ img[alt=""] {
 
 #features {
   padding: 5rem 0;
-  background-image: linear-gradient(rgba(236, 102, 45, 0.5), hsla(350, 69%, 58%, 0.5)), url(/images/people-7.jpg);
+  background-image: linear-gradient(rgba(236, 102, 45, 0.5), hsla(350, 69%, 58%, 0.5)), url(../images/people-7.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -265,7 +265,7 @@ img[alt=""] {
   height: 80vh;
   max-width: 3000px;
   margin: 0 auto;
-  background-image: linear-gradient(to right bottom, rgba(236, 102, 45, 0.3), hsla(350, 69%, 58%, 0.3)), url(/images/hero-large.jpg);
+  background-image: linear-gradient(to right bottom, rgba(236, 102, 45, 0.3), hsla(350, 69%, 58%, 0.3)), url(../images/hero-large.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
