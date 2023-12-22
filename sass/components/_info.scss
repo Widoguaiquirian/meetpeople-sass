@@ -1,18 +1,19 @@
 .info {
   max-width: 90%;
   margin: 0 auto;
-  background: $primary-color;
+
   color: white;
-  margin-top: -5rem;
+  margin-top: -10rem;
   position: relative;
   border-radius: 5px 0px 5px 0;
-  padding: 2rem 0;
+  padding: 5rem 0;
 
   &-main {
     display: flex;
-
+    background: $primary-color;
+    align-items: center;
     &-hero {
-      padding: 3rem 6rem;
+      padding: 3rem;
       min-width: fit-content;
 
       &-title {
@@ -26,6 +27,25 @@
       padding: 3rem;
       letter-spacing: 1px;
       font-size: clamp(1.5rem, 2vw, 2rem);
+    }
+  }
+
+  &-tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    &-tab {
+      color: $quaternary-color;
+      display: flex;
+      justify-content: center;
+      width: 25%;
+      align-items: center;
+
+      i {
+        margin-right: 2rem;
+        font-size: clamp(2rem, 4vw, 4rem);
+      }
     }
   }
 }

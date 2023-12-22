@@ -263,18 +263,19 @@ img[alt=""] {
 .info {
   max-width: 90%;
   margin: 0 auto;
-  background: #ec672d;
   color: white;
-  margin-top: -5rem;
+  margin-top: -10rem;
   position: relative;
   border-radius: 5px 0px 5px 0;
-  padding: 2rem 0;
+  padding: 5rem 0;
 }
 .info-main {
   display: flex;
+  background: #ec672d;
+  align-items: center;
 }
 .info-main-hero {
-  padding: 3rem 6rem;
+  padding: 3rem;
   min-width: fit-content;
 }
 .info-main-hero-title {
@@ -286,6 +287,22 @@ img[alt=""] {
   padding: 3rem;
   letter-spacing: 1px;
   font-size: clamp(1.5rem, 2vw, 2rem);
+}
+.info-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.info-tabs-tab {
+  color: #2f4858;
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  align-items: center;
+}
+.info-tabs-tab i {
+  margin-right: 2rem;
+  font-size: clamp(2rem, 4vw, 4rem);
 }
 
 .main {
