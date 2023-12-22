@@ -1,6 +1,10 @@
 /* Hero section animation */
-@keyframes moveInLeft {
+@keyframes moveIn {
   0% {
+    opacity: 0;
+  }
+
+  45% {
     opacity: 0;
   }
 

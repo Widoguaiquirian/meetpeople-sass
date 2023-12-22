@@ -23,28 +23,6 @@ a {
   text-decoration: none;
 }
 
-.secondary-heading {
-  font-size: clamp(2rem, 3vw, 3.5rem);
-  text-transform: uppercase;
-  font-weight: 700;
-  background-image: linear-gradient(to right, #ec672d, #de4b64);
-  display: inline-block;
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: all 0.2s;
-  margin-bottom: 3rem;
-}
-.secondary-heading:hover {
-  transform: skewY(2deg) skewX(2deg) scale(1.1);
-  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.185);
-}
-
-.tertiary-heading {
-  font-size: clamp(1.6rem, 2vw, 2.2rem);
-  font-weight: bold;
-  margin: 0;
-}
-
 /* Son clases que modifican a un elemento */
 /* Por ejemplo, quiero asignar ciertos estilo a un elemento puntual */
 /* tooltip
@@ -104,16 +82,39 @@ img[alt=""] {
   outline-offset: 1.5rem;
 }
 
+.about .about-heading {
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #ec672d, #de4b64);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+  margin-bottom: 3rem;
+}
+.about .about-heading:hover {
+  transform: skewY(2deg) skewX(2deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.185);
+}
 .about .section-row {
-  padding-bottom: 20rem;
+  padding-bottom: 10rem;
 }
 .about .section-row-block {
   width: 50%;
 }
+.about .section-row-block .about-tertiary-heading {
+  font-size: clamp(1.6rem, 2vw, 2.2rem);
+  font-weight: bold;
+  margin: 0;
+}
 
 /* Hero section animation */
-@keyframes moveInLeft {
+@keyframes moveIn {
   0% {
+    opacity: 0;
+  }
+  45% {
     opacity: 0;
   }
   100% {
@@ -212,12 +213,11 @@ img[alt=""] {
 }
 
 #features {
-  padding: 8rem 0;
+  padding: 5rem 0 15rem 0;
   background-image: linear-gradient(rgba(236, 102, 45, 0.5), hsla(350, 69%, 58%, 0.5)), url(../images/people-7.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transform: skewY(-5deg) translateY(-6.8rem);
 }
 #features .section-row-block {
   width: 100%;
@@ -228,7 +228,7 @@ img[alt=""] {
   max-width: 1200px;
   text-align: center;
   justify-content: space-around;
-  transform: skewY(5deg);
+  transform: skewY(-5deg);
 }
 #features .features-row-feature {
   background-color: rgba(255, 255, 255, 0.863);
@@ -239,6 +239,7 @@ img[alt=""] {
   margin: 0 1rem;
   color: #2f4858;
   transition: all 0.4s ease;
+  transform: skewY(5deg);
 }
 #features .features-row-feature-icon {
   width: 100%;
@@ -255,8 +256,36 @@ img[alt=""] {
   background: #2f4858;
 }
 #features .features-row-feature:hover {
-  transform: translateY(-15px);
   box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.363);
+  transform: translateY(-25px) skewY(5deg);
+}
+
+.info {
+  max-width: 90%;
+  margin: 0 auto;
+  background: #ec672d;
+  color: white;
+  margin-top: -5rem;
+  position: relative;
+  border-radius: 5px 0px 5px 0;
+  padding: 2rem 0;
+}
+.info-main {
+  display: flex;
+}
+.info-main-hero {
+  padding: 3rem 6rem;
+  min-width: fit-content;
+}
+.info-main-hero-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  padding: 0;
+  margin: 0;
+}
+.info-main-text {
+  padding: 3rem;
+  letter-spacing: 1px;
+  font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
 .main {
@@ -295,7 +324,7 @@ img[alt=""] {
   max-width: 90%;
   text-align: center;
   background: rgba(255, 255, 255, 0.744);
-  animation: moveInLeft 0.3s ease-in;
+  animation: moveIn 0.3s ease-in;
 }
 .header-hero-title {
   color: #2f4858;
