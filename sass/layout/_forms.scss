@@ -49,5 +49,36 @@
         margin-bottom: 2rem;
       }
     }
+
+    &-profile {
+      min-width: 40%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+
+      &-btn {
+        width: 200px;
+        height: 60px;
+        border-radius: 3px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        background: $primary-color;
+        color: white;
+        text-transform: uppercase;
+        position: relative;
+
+        .hand {
+          position: absolute;
+          font-size: clamp(1.8rem, 3vw, 4rem);
+
+          transform: rotate(-50deg);
+          animation-duration: 2s;
+          animation-name: handly;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;
+        }
+      }
+    }
   }
 }

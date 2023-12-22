@@ -125,6 +125,20 @@ img[alt=""] {
     opacity: 1;
   }
 }
+@keyframes handly {
+  0% {
+    top: -6rem;
+    right: -6rem;
+  }
+  50% {
+    top: -3rem;
+    right: -3rem;
+  }
+  100% {
+    top: -6rem;
+    right: -6rem;
+  }
+}
 /* Hero section buttons */
 .header-hero-btn {
   border-radius: 0.5rem;
@@ -346,6 +360,33 @@ img[alt=""] {
 }
 .register-main-explanation-text:not(:last-child) {
   margin-bottom: 2rem;
+}
+.register-main-profile {
+  min-width: 40%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.register-main-profile-btn {
+  width: 200px;
+  height: 60px;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: #ec672d;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+}
+.register-main-profile-btn .hand {
+  position: absolute;
+  font-size: clamp(1.8rem, 3vw, 4rem);
+  transform: rotate(-50deg);
+  animation-duration: 2s;
+  animation-name: handly;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .main {
