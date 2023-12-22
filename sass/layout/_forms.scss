@@ -1,0 +1,53 @@
+.register {
+  &-header {
+    width: 100%;
+
+    &-title {
+      margin: 0;
+
+      font-size: clamp(2rem, 3vw, 3.5rem);
+      text-transform: uppercase;
+      font-weight: 700;
+      background-image: linear-gradient(
+        to right,
+        $primary-color,
+        $secondary-color
+      );
+      display: inline-block;
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: all 0.2s;
+    }
+
+    &-text {
+      margin: 0;
+    }
+  }
+
+  &-main {
+    display: flex;
+    margin-top: 5rem;
+    padding: 0 4rem;
+
+    &-explanation {
+      text-align: justify;
+
+      &-heading {
+        font-size: clamp(1.8rem, 2vw, 3rem);
+        margin: 0;
+
+        span {
+          color: $quaternary-color;
+        }
+      }
+
+      &-text {
+        margin: 0;
+      }
+
+      &-text:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

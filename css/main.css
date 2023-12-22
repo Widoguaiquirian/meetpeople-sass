@@ -51,6 +51,10 @@ centrar en flex
   width: 3rem;
 }
 
+.divider {
+  margin: 4rem 0 0rem 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -303,6 +307,45 @@ img[alt=""] {
 .info-tabs-tab i {
   margin-right: 2rem;
   font-size: clamp(2rem, 4vw, 4rem);
+}
+
+.register-header {
+  width: 100%;
+}
+.register-header-title {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #ec672d, #de4b64);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+}
+.register-header-text {
+  margin: 0;
+}
+.register-main {
+  display: flex;
+  margin-top: 5rem;
+  padding: 0 4rem;
+}
+.register-main-explanation {
+  text-align: justify;
+}
+.register-main-explanation-heading {
+  font-size: clamp(1.8rem, 2vw, 3rem);
+  margin: 0;
+}
+.register-main-explanation-heading span {
+  color: #2f4858;
+}
+.register-main-explanation-text {
+  margin: 0;
+}
+.register-main-explanation-text:not(:last-child) {
+  margin-bottom: 2rem;
 }
 
 .main {
