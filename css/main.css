@@ -104,6 +104,9 @@ img[alt=""] {
   outline-offset: 1.5rem;
 }
 
+.about .section-row {
+  padding-bottom: 20rem;
+}
 .about .section-row-block {
   width: 50%;
 }
@@ -165,7 +168,6 @@ img[alt=""] {
 .section-row-btn:hover {
   background-color: #2f4858;
   color: white;
-  border-bottom: none;
   transform: translateY(-3px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.26);
 }
@@ -210,11 +212,12 @@ img[alt=""] {
 }
 
 #features {
-  padding: 5rem 0;
+  padding: 8rem 0;
   background-image: linear-gradient(rgba(236, 102, 45, 0.5), hsla(350, 69%, 58%, 0.5)), url(../images/people-7.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transform: skewY(-5deg) translateY(-6.8rem);
 }
 #features .section-row-block {
   width: 100%;
@@ -225,6 +228,7 @@ img[alt=""] {
   max-width: 1200px;
   text-align: center;
   justify-content: space-around;
+  transform: skewY(5deg);
 }
 #features .features-row-feature {
   background-color: rgba(255, 255, 255, 0.863);
@@ -259,6 +263,7 @@ img[alt=""] {
   max-width: 160rem;
   margin: 0 auto;
   padding: 0 1rem;
+  overflow: hidden;
 }
 
 .header {
@@ -311,7 +316,7 @@ img[alt=""] {
 
 .section {
   background: rgba(181, 181, 181, 0.208);
-  padding: 5rem 3rem;
+  padding: 3rem;
   text-align: center;
 }
 .section-row {

@@ -1,5 +1,5 @@
 #features {
-  padding: 5rem 0;
+  padding: 8rem 0;
   background-image: linear-gradient(
       rgba(236, 102, 45, 0.5),
       hsla(350, 69%, 58%, 0.5)
@@ -8,6 +8,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  transform: skewY(-5deg) translateY(-6.8rem);
 
   .section-row {
     &-block {
@@ -21,6 +23,7 @@
     max-width: 1200px;
     text-align: center;
     justify-content: space-around;
+    transform: skewY(5deg);
 
     &-feature {
       background-color: rgba(255, 255, 255, 0.863);
