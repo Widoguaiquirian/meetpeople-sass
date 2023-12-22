@@ -1,0 +1,25 @@
+.section-row-block-collage {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+
+  &-picture {
+    max-width: 50%;
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.308);
+    position: absolute;
+
+    &:nth-child(1) {
+      top: -2rem;
+      left: 4rem;
+    }
+    &:nth-child(2) {
+      right: 3rem;
+      top: 2rem;
+    }
+    &:nth-child(3) {
+      top: 10rem;
+      left: 15rem;
+    }
+  }
+}

@@ -1,10 +1,11 @@
-.main-section {
+.section {
   background: rgba(181, 181, 181, 0.208);
   padding: 5rem 0;
   text-align: center;
 
   &-row {
     display: flex;
+    padding: 2rem 0;
 
     &-block {
       width: 50%;
@@ -23,7 +24,6 @@
       // image
 
       figure {
-        background: red;
         width: 100%;
         padding: 0;
         margin: 0;
