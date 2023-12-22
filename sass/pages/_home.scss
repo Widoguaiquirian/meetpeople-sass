@@ -8,7 +8,6 @@
     padding: 2rem 0;
 
     &-block {
-      width: 50%;
       text-align: justify;
       padding: 0 4rem;
       margin: 2rem 0;
@@ -20,8 +19,6 @@
       &-p:not(:last-child) {
         margin-bottom: 3rem;
       }
-
-      // image
 
       figure {
         width: 100%;

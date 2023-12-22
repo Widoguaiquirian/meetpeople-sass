@@ -1,0 +1,58 @@
+#features {
+  padding: 5rem 0;
+  background-image: linear-gradient(
+      rgba(236, 102, 45, 0.5),
+      hsla(350, 69%, 58%, 0.5)
+    ),
+    url(/images/people-7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .section-row {
+    &-block {
+      width: 100%;
+    }
+  }
+
+  .features-row {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    justify-content: space-around;
+
+    &-feature {
+      background-color: rgba(255, 255, 255, 0.863);
+      width: 300px;
+      border-radius: 3px;
+      padding: 1rem 1.5rem;
+      height: 310px;
+      margin: 0 1rem;
+      color: $quaternary-color;
+      transition: all 0.4s ease;
+
+      &-icon {
+        width: 100%;
+        display: block;
+        margin: 2rem 0;
+
+        i {
+          font-size: clamp(2rem, 4vw, 5rem);
+          color: $quaternary-color;
+        }
+      }
+
+      a {
+        min-width: 70%;
+        color: white;
+        background: $quaternary-color;
+      }
+
+      &:hover {
+        transform: translateY(-15px);
+        box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.363);
+      }
+    }
+  }
+}
