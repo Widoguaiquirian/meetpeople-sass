@@ -444,6 +444,14 @@ img[alt=""] {
   margin-bottom: 2rem;
 }
 
+.header-profile {
+  background-image: url(../images/people-3-large.jpg);
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-position: center 40%;
+  background-size: cover;
+}
+
 .section {
   background: rgba(181, 181, 181, 0.208);
   padding: 3rem;

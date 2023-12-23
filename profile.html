@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Create profile</title>
+
+    <!-- NORMALIZE-->
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!--PRINT-->
+    <!-- <link rel="stylesheet" href="" media="print" /> -->
+
+    <!--FAVICON-->
+    <link rel="icon" href="images/icons/favicon.ico" />
+    <link rel="icon" href="images/icons/favicon.ico" type="image/svg+xml" />
+
+    <meta name="author" content="Luis Guaiquirian" />
+
+    <meta
+      name="description"
+      content="Luis Guaiquirian is a student web programmer, based in London Ontario, CAnada, apprentice, web programmer, Venezuelan web developer, Chilean"
+    />
+
+    <meta name="keywords" content="London Ontario" />
+
+    <!--GOOGLE FONTS - LATO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--FONT AWESOME-->
+    <script
+      src="https://kit.fontawesome.com/54c63f95c5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header-profile"></header>
+    <main class="main-profile">
+      <h1 class="main-profile-title">Registration page</h1>
+      <form class="main-profile-form">
+        <fieldset>
+          <legend>Let's start with the basics</legend>
+          <div class="main-profile-form-row">
+            <label for="username">Username <span>*</span></label>
+            <input type="text" name="username" id="username" required />
+          </div>
+          <div class="main-profile-form-row">
+            <label for="name">Name <span>*</span></label>
+            <input type="text" name="name" id="names" required />
+          </div>
+          <div class="main-profile-form-row">
+            <label for="email">Email <span>*</span></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Hello@gmail.com"
+              required
+            />
+          </div>
+          <div class="main-profile-form-row">
+            <label for="password">Enter password</label>
+            <input type="password" required />
+          </div>
+          <div class="main-profile-form-row">
+            <label for="password">Repeat password</label>
+            <input type="password" required />
+          </div>
+          <div class="main-profile-form-row">
+            <label class="local">
+              <input type="checkbox" name="local" value="local" />
+              Local
+            </label>
+            <label class="global">
+              <input type="checkbox" name="global" value="global" />
+              Make friends worldwide
+            </label>
+            <label class="pets">
+              <input type="checkbox" name="pets" value="pets" />
+              Friends with pets
+            </label>
+            <label class="kids">
+              <input type="checkbox" name="kids" value="kids" />
+              Friends with kids
+            </label>
+            <label class="excercise">
+              <input type="checkbox" name="excercise" value="excercise" />
+              Excercise friends
+            </label>
+            <label class="club">
+              <input type="checkbox" name="club" value="club" />
+              Join/start a club
+            </label>
+            <label class="night">
+              <input type="checkbox" name="night" value="night" />
+              Plans for tonight
+            </label>
+            <label class="double">
+              <input type="checkbox" name="double" value="double" />
+              Go double date
+            </label>
+            <label class="eating">
+              <input type="checkbox" name="eating" value="eating" />
+              Eating out
+            </label>
+            <label class="others">
+              <input type="checkbox" name="others" value="others" />
+              Others
+            </label>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
