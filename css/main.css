@@ -23,36 +23,9 @@ a {
   text-decoration: none;
 }
 
-/* Son clases que modifican a un elemento */
-/* Por ejemplo, quiero asignar ciertos estilo a un elemento puntual */
-/* tooltip
-algun detalle puntual de texto
-centrar en flex
- */
-.uti-fle-cen {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.uti-pos-cen {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.uti-svg-ico {
-  align-items: center;
-  display: flex;
-  height: 3rem;
-  justify-content: center;
-  line-height: 0;
-  width: 3rem;
-}
-
 .divider {
   margin: 4rem 0 0rem 0;
+  padding: 0;
 }
 
 * {
@@ -230,6 +203,72 @@ img[alt=""] {
   filter: blur(2px);
 }
 
+.register-header {
+  width: 100%;
+}
+.register-header-title {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #ec672d, #de4b64);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+}
+.register-header-text {
+  margin: 0;
+}
+.register-main {
+  display: flex;
+  margin-top: 5rem;
+  padding: 0 4rem;
+}
+.register-main-explanation {
+  text-align: justify;
+}
+.register-main-explanation-heading {
+  font-size: clamp(1.8rem, 2vw, 3rem);
+  margin: 0;
+}
+.register-main-explanation-heading span {
+  color: #2f4858;
+}
+.register-main-explanation-text {
+  margin: 0;
+}
+.register-main-explanation-text:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.register-main-profile {
+  min-width: 40%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.register-main-profile-btn {
+  width: 200px;
+  height: 60px;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: #ec672d;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+}
+.register-main-profile-btn .hand {
+  position: absolute;
+  font-size: clamp(1.8rem, 3vw, 4rem);
+  transform: rotate(-50deg);
+  animation-duration: 2s;
+  animation-name: handly;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
 #features {
   padding: 5rem 0 15rem 0;
   background-image: linear-gradient(rgba(236, 102, 45, 0.5), hsla(350, 69%, 58%, 0.5)), url(../images/people-7.jpg);
@@ -276,6 +315,18 @@ img[alt=""] {
 #features .features-row-feature:hover {
   box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.363);
   transform: translateY(-25px) skewY(5deg);
+}
+
+.main-profile {
+  padding: 2rem 0;
+}
+.main-profile-title {
+  text-align: center;
+}
+.main-profile-form {
+  width: 700px;
+  max-width: 95%;
+  margin: 0 auto;
 }
 
 .info {
@@ -384,16 +435,6 @@ img[alt=""] {
   height: 50vh;
   background-position: center 40%;
   background-size: cover;
-}
-
-.main-profile-title {
-  color: red;
-  text-align: center;
-}
-.main-profile-form {
-  width: 700px;
-  max-width: 95%;
-  margin: 0 auto;
 }
 
 .section {

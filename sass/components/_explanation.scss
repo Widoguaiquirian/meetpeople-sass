@@ -71,7 +71,6 @@
         .hand {
           position: absolute;
           font-size: clamp(1.8rem, 3vw, 4rem);
-
           transform: rotate(-50deg);
           animation-duration: 2s;
           animation-name: handly;

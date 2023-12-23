@@ -1,0 +1,14 @@
+// Profile form
+.main-profile {
+  padding: 2rem 0;
+
+  &-title {
+    text-align: center;
+  }
+
+  &-form {
+    width: 700px;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
