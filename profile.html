@@ -50,14 +50,17 @@
       <form class="main-profile-form">
         <fieldset>
           <legend>Let's start with the basics</legend>
+          <!-- Username -->
           <div class="main-profile-form-row">
             <label for="username">Username <span>*</span></label>
             <input type="text" name="username" id="username" required />
           </div>
+          <!-- Name -->
           <div class="main-profile-form-row">
             <label for="name">Name <span>*</span></label>
             <input type="text" name="name" id="names" required />
           </div>
+          <!-- Email -->
           <div class="main-profile-form-row">
             <label for="email">Email <span>*</span></label>
             <input
@@ -68,14 +71,17 @@
               required
             />
           </div>
+          <!-- Password -->
           <div class="main-profile-form-row">
             <label for="password">Enter password</label>
             <input type="password" required />
           </div>
+          <!-- Password x2 -->
           <div class="main-profile-form-row">
             <label for="password">Repeat password</label>
             <input type="password" required />
           </div>
+          <!-- Interests -->
           <div class="main-profile-form-row">
             <label class="local">
               <input type="checkbox" name="local" value="local" />
@@ -118,6 +124,50 @@
               Others
             </label>
           </div>
+          <!-- Date of birth -->
+          <div class="main-profile-form-row">
+            <label for="date">Date of birth</label>
+            <input type="date" required />
+          </div>
+          <!-- Gender -->
+          <div class="main-profile-form-row">
+            <label for="gender">Gender <span>*</span></label>
+            <select name="gender" id="gender">
+              <option value=" " selected></option>
+              <option value="male">Male</option>
+              <option value="females">Female</option>
+              <option value="couple">Couple</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <!-- Country -->
+          <div class="main-profile-form-row">
+            <label for="country">Country</label>
+            <select name="countries" id="countries"></select>
+          </div>
+          <!-- city -->
+          <div class="main-profile-form-row">
+            <label for="city">City <span>*</span></label>
+            <input type="text" name="city" id="city" required />
+          </div>
+          <!-- Photo -->
+          <div class="main-profile-form-row">
+            <label for="photo">Your profile picture <span>*</span></label>
+            <input type="file" name="photo" id="photo" required />
+          </div>
+          <!-- About me -->
+          <div class="main-profile-form-row">
+            <label for="about">About me</label>
+            <textarea name="about" id="about" rows="10"></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Termds and security</legend>
+          <a href="#">Read the terms and conditions</a>
+          <label class="terms">
+            <input type="checkbox" name="terms" value="terms" />
+            I have read terms and conditions!
+          </label>
         </fieldset>
       </form>
     </main>

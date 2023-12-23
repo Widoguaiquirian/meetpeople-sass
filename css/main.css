@@ -323,72 +323,6 @@ img[alt=""] {
   font-size: clamp(2rem, 4vw, 4rem);
 }
 
-.register-header {
-  width: 100%;
-}
-.register-header-title {
-  margin: 0;
-  font-size: clamp(2rem, 3vw, 3.5rem);
-  text-transform: uppercase;
-  font-weight: 700;
-  background-image: linear-gradient(to right, #ec672d, #de4b64);
-  display: inline-block;
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: all 0.2s;
-}
-.register-header-text {
-  margin: 0;
-}
-.register-main {
-  display: flex;
-  margin-top: 5rem;
-  padding: 0 4rem;
-}
-.register-main-explanation {
-  text-align: justify;
-}
-.register-main-explanation-heading {
-  font-size: clamp(1.8rem, 2vw, 3rem);
-  margin: 0;
-}
-.register-main-explanation-heading span {
-  color: #2f4858;
-}
-.register-main-explanation-text {
-  margin: 0;
-}
-.register-main-explanation-text:not(:last-child) {
-  margin-bottom: 2rem;
-}
-.register-main-profile {
-  min-width: 40%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-.register-main-profile-btn {
-  width: 200px;
-  height: 60px;
-  border-radius: 3px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  background: #ec672d;
-  color: white;
-  text-transform: uppercase;
-  position: relative;
-}
-.register-main-profile-btn .hand {
-  position: absolute;
-  font-size: clamp(1.8rem, 3vw, 4rem);
-  transform: rotate(-50deg);
-  animation-duration: 2s;
-  animation-name: handly;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
 .main {
   max-width: 160rem;
   margin: 0 auto;
@@ -450,6 +384,16 @@ img[alt=""] {
   height: 50vh;
   background-position: center 40%;
   background-size: cover;
+}
+
+.main-profile-title {
+  color: red;
+  text-align: center;
+}
+.main-profile-form {
+  width: 700px;
+  max-width: 95%;
+  margin: 0 auto;
 }
 
 .section {

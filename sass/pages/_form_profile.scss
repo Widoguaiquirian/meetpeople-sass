@@ -5,3 +5,16 @@
   background-position: center 40%;
   background-size: cover;
 }
+
+.main-profile {
+  &-title {
+    color: red;
+    text-align: center;
+  }
+
+  &-form {
+    width: 700px;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
