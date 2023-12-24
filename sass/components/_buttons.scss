@@ -59,3 +59,32 @@
     transform: scale(0.98);
   }
 }
+
+// Terms and conditions button
+.terms-btn {
+  display: block;
+  font-style: italic;
+  width: max-content;
+  color: black;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+//submit create profile btn
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: $quaternary-color;
+  color: white;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  &:hover {
+    background-color: lighten($quaternary-color, 10%);
+  }
+}

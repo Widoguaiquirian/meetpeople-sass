@@ -52,17 +52,17 @@
           <legend>Let's start with the basics</legend>
           <!-- Username -->
           <div class="main-profile-form-row">
-            <label for="username">Username <span>*</span></label>
+            <label for="username">Username <span class="star">*</span></label>
             <input type="text" name="username" id="username" required />
           </div>
           <!-- Name -->
           <div class="main-profile-form-row">
-            <label for="name">Name <span>*</span></label>
+            <label for="name">Name <span class="star">*</span></label>
             <input type="text" name="name" id="names" required />
           </div>
           <!-- Email -->
           <div class="main-profile-form-row">
-            <label for="email">Email <span>*</span></label>
+            <label for="email">Email <span class="star">*</span></label>
             <input
               type="email"
               name="email"
@@ -82,7 +82,7 @@
             <input type="password" required />
           </div>
           <!-- Interests -->
-          <div class="main-profile-form-row">
+          <!-- <div class="main-profile-form-row">
             <label class="local">
               <input type="checkbox" name="local" value="local" />
               Local
@@ -123,7 +123,7 @@
               <input type="checkbox" name="others" value="others" />
               Others
             </label>
-          </div>
+          </div> -->
           <!-- Date of birth -->
           <div class="main-profile-form-row">
             <label for="date">Date of birth</label>
@@ -131,8 +131,8 @@
           </div>
           <!-- Gender -->
           <div class="main-profile-form-row">
-            <label for="gender">Gender <span>*</span></label>
-            <select name="gender" id="gender">
+            <label for="gender">Gender <span class="star">*</span></label>
+            <select name="gender" id="gender" required>
               <option value=" " selected></option>
               <option value="male">Male</option>
               <option value="females">Female</option>
@@ -147,28 +147,39 @@
           </div>
           <!-- city -->
           <div class="main-profile-form-row">
-            <label for="city">City <span>*</span></label>
+            <label for="city">City <span class="star">*</span></label>
             <input type="text" name="city" id="city" required />
           </div>
           <!-- Photo -->
           <div class="main-profile-form-row">
-            <label for="photo">Your profile picture <span>*</span></label>
+            <label for="photo"
+              >Your profile picture <span class="star">*</span></label
+            >
             <input type="file" name="photo" id="photo" required />
           </div>
           <!-- About me -->
           <div class="main-profile-form-row">
-            <label for="about">About me</label>
-            <textarea name="about" id="about" rows="10"></textarea>
+            <label for="about">About me:</label>
+            <textarea
+              name="about"
+              id="about"
+              rows="10"
+              placeholder="Write about you, your interests and what you want."
+            ></textarea>
           </div>
         </fieldset>
         <fieldset>
           <legend>Termds and security</legend>
-          <a href="#">Read the terms and conditions</a>
+          <a class="terms-btn" href="#"
+            >Read the terms and conditions <span class="star">*</span></a
+          >
           <label class="terms">
             <input type="checkbox" name="terms" value="terms" />
             I have read terms and conditions!
           </label>
         </fieldset>
+
+        <button class="submit-btn" type="submit">Create profile</button>
       </form>
     </main>
     <script src="javascript/script.js"></script>

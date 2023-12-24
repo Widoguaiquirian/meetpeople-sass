@@ -2,3 +2,15 @@
   margin: 4rem 0 0rem 0;
   padding: 0;
 }
+
+/*missing alt attribute*/
+img:not([alt]) {
+  outline: 0.5rem dashed red;
+  outline-offset: 0.5rem;
+}
+
+/*empty alt attribute*/
+img[alt=""] {
+  outline: 0.5rem solid blue;
+  outline-offset: 1.5rem;
+}

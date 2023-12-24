@@ -28,8 +28,23 @@ a {
   padding: 0;
 }
 
+/*missing alt attribute*/
+img:not([alt]) {
+  outline: 0.5rem dashed red;
+  outline-offset: 0.5rem;
+}
+
+/*empty alt attribute*/
+img[alt=""] {
+  outline: 0.5rem solid blue;
+  outline-offset: 1.5rem;
+}
+
 * {
   box-sizing: border-box;
+}
+*::placeholder {
+  color: lightgray;
 }
 
 body {
@@ -45,18 +60,6 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-/*missing alt attribute*/
-img:not([alt]) {
-  outline: 0.5rem dashed red;
-  outline-offset: 0.5rem;
-}
-
-/*empty alt attribute*/
-img[alt=""] {
-  outline: 0.5rem solid blue;
-  outline-offset: 1.5rem;
 }
 
 .about .about-heading {
@@ -165,6 +168,31 @@ img[alt=""] {
 }
 .section-row-btn:active {
   transform: scale(0.98);
+}
+
+.terms-btn {
+  display: block;
+  font-style: italic;
+  width: max-content;
+  color: black;
+}
+.terms-btn:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #2f4858;
+  color: white;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.submit-btn:hover {
+  background-color: #416379;
 }
 
 .section-row-block-collage {
@@ -318,15 +346,74 @@ img[alt=""] {
 }
 
 .main-profile {
-  padding: 2rem 0;
+  padding: 5rem 0;
+  max-width: 95%;
+  margin: 0 auto;
 }
 .main-profile-title {
   text-align: center;
+  font-size: clamp(2.5rem, 3vw, 3.5rem);
+  text-transform: uppercase;
+  color: #2f4858;
 }
 .main-profile-form {
-  width: 700px;
-  max-width: 95%;
-  margin: 0 auto;
+  width: 600px;
+  max-width: 99%;
+  margin: 4rem auto;
+}
+.main-profile-form fieldset:nth-child(1) {
+  height: 660px;
+  margin-bottom: 2rem;
+}
+.main-profile-form fieldset:nth-child(2) {
+  height: 120px;
+  margin-bottom: 2rem;
+}
+.main-profile-form fieldset {
+  border: 1px solid rgba(128, 128, 128, 0.233);
+  border-radius: 3px;
+  max-width: 100%;
+}
+.main-profile-form fieldset legend {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  color: #2f4858;
+  padding: 0 2rem;
+}
+.main-profile-form fieldset .main-profile-form-row {
+  display: flex;
+  height: 30px;
+}
+.main-profile-form fieldset .main-profile-form-row label {
+  min-width: 110px;
+  text-align: right;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: clamp(1.4rem, 2vw, 1.6rem);
+}
+.main-profile-form fieldset .main-profile-form-row label .star {
+  color: red;
+  font-weight: bold;
+  margin-left: 0.4rem;
+}
+.main-profile-form fieldset .main-profile-form-row input {
+  width: 100%;
+  background: rgba(128, 128, 128, 0.055);
+  border: none;
+  vertical-align: middle;
+}
+.main-profile-form fieldset .main-profile-form-row textarea {
+  width: 100%;
+  resize: none;
+  padding: 0.5rem 1rem;
+  height: 100px;
+}
+.main-profile-form fieldset .main-profile-form-row select {
+  width: 100%;
+}
+.main-profile-form fieldset .main-profile-form-row:not(:last-child) {
+  margin-bottom: 2rem;
 }
 
 .info {

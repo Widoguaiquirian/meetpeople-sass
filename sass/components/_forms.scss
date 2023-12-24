@@ -1,14 +1,87 @@
 // Profile form
 .main-profile {
-  padding: 2rem 0;
+  padding: 5rem 0;
+  max-width: 95%;
+
+  margin: 0 auto;
 
   &-title {
     text-align: center;
+
+    font-size: clamp(2.5rem, 3vw, 3.5rem);
+    text-transform: uppercase;
+    color: $quaternary-color;
   }
 
   &-form {
-    width: 700px;
-    max-width: 95%;
-    margin: 0 auto;
+    width: 600px;
+    max-width: 99%;
+    margin: 4rem auto;
+
+    //adding height only the first fieldset
+    fieldset:nth-child(1) {
+      height: 660px;
+      margin-bottom: 2rem;
+    }
+
+    fieldset:nth-child(2) {
+      height: 120px;
+      margin-bottom: 2rem;
+    }
+
+    fieldset {
+      border: 1px solid rgba(128, 128, 128, 0.233);
+      border-radius: 3px;
+      max-width: 100%;
+
+      legend {
+        font-size: clamp(2rem, 3vw, 2.5rem);
+        color: $quaternary-color;
+        padding: 0 2rem;
+      }
+
+      .main-profile-form-row {
+        display: flex;
+        height: 30px;
+
+        label {
+          min-width: 110px;
+          text-align: right;
+          margin-right: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          font-size: clamp(1.4rem, 2vw, 1.6rem);
+
+          .star {
+            color: red;
+            font-weight: bold;
+            margin-left: 0.4rem;
+          }
+        }
+
+        input {
+          width: 100%;
+          background: rgba(128, 128, 128, 0.055);
+          border: none;
+          vertical-align: middle;
+        }
+
+        textarea {
+          width: 100%;
+          resize: none;
+          padding: 0.5rem 1rem;
+          height: 100px;
+        }
+
+        select {
+          width: 100%;
+        }
+      }
+
+      .main-profile-form-row:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
   }
 }
