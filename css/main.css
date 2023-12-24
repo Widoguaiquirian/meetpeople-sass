@@ -347,7 +347,7 @@ li {
 
 .main-profile {
   padding: 5rem 0;
-  max-width: 95%;
+  max-width: 99%;
   margin: 0 auto;
 }
 .main-profile-title {
@@ -548,4 +548,11 @@ li {
   width: 100%;
   padding: 0;
   margin: 0;
+}
+
+.main-header {
+  width: 700px;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 2rem;
 }
