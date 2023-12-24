@@ -48,7 +48,7 @@ img[alt=""] {
 }
 
 body {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 img {
@@ -464,7 +464,7 @@ li {
 .main {
   max-width: 160rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   overflow: hidden;
 }
 
