@@ -1,0 +1,39 @@
+@mixin mainContainer {
+  background: rgba(181, 181, 181, 0.208);
+  padding: 3rem;
+  text-align: center;
+}
+
+@mixin mainRow {
+  display: flex;
+}
+
+@mixin primaryHeading {
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient($primary-color, $primary-dark-color);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.3s;
+  margin-bottom: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+@mixin tertiaryheading {
+  font-size: clamp(1.6rem, 2vw, 2.2rem);
+  font-weight: bold;
+  margin: 0;
+}
+
+@mixin resetBtn {
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-weight: bold;
+  outline: none;
+  border-radius: 0.5rem;
+}

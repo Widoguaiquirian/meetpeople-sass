@@ -1,5 +1,6 @@
-#features {
-  padding: 5rem 0 15rem 0;
+.features {
+  @include mainContainer;
+
   background-image: linear-gradient(
       rgba(236, 102, 45, 0.5),
       hsla(350, 69%, 58%, 0.5)
@@ -8,18 +9,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 10rem 0;
 
-  .section-row {
-    &-block {
-      width: 100%;
-    }
-  }
-
-  .features-row {
-    display: flex;
+  &-row {
+    @include mainRow;
     margin: 0 auto;
     max-width: 1200px;
-    text-align: center;
+
     justify-content: space-around;
     transform: skewY(-5deg);
 
@@ -45,15 +41,9 @@
         }
       }
 
-      a {
-        min-width: 70%;
-        color: white;
-        background: $quaternary-color;
-      }
-
       &:hover {
         box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.363);
-        transform: translateY(-25px) skewY(5deg);
+        transform: translateY(-5px) skewY(5deg);
       }
     }
   }

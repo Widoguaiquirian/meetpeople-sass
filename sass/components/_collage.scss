@@ -1,8 +1,7 @@
-.section-row-block-collage {
+.about-row-block-collage {
   margin: 0 auto;
   text-align: center;
   position: relative;
-
   height: 30rem;
 
   &-picture {
@@ -36,8 +35,7 @@
   }
 }
 
-.section-row-block-collage:hover
-  .section-row-block-collage-picture:not(:hover) {
+.about-row-block-collage:hover .about-row-block-collage-picture:not(:hover) {
   transform: scale(0.95) translateY(-0.5rem);
   filter: blur(2px);
 }

@@ -1,21 +1,17 @@
 /* Hero section buttons */
 .header-hero-btn {
-  border-radius: 0.5rem;
-  outline: none;
-  border: none;
+  @include resetBtn;
   padding: 0.5rem 1.5rem;
   font-size: clamp(1.2rem, 2vw, 1.5rem);
   color: white;
   background: $quaternary-color;
   font-weight: bold;
-  text-transform: uppercase;
+
   display: inline-block;
   margin: 0.5rem;
-  transition: 0.3s;
 
   &:hover {
     transform: scale(1.1);
-    transition: 0.2s;
     box-shadow: 0.1rem 0.4rem 0.3rem rgba(0, 0, 0, 0.227);
   }
 
@@ -29,28 +25,23 @@
     color: $secondary-color;
     background: transparent;
     border: 0.1rem solid $quaternary-color;
-    transition: 0.3s;
   }
 
   &:last-child:hover {
     background-color: $secondary-color;
     color: white;
-    transition: 0.3s;
   }
 }
 
 // About button
-.section-row-btn {
-  color: $quaternary-color;
-  font-weight: bold;
+.about-row-btn {
+  @include resetBtn;
+  color: white;
   padding: 0.4rem 0.7rem;
-  border-bottom: 2px solid $quaternary-color;
-  transition: all 0.3s;
   display: inline-block;
+  background-color: $quaternary-color;
 
   &:hover {
-    background-color: $quaternary-color;
-    color: white;
     transform: translateY(-3px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.26);
   }
@@ -58,6 +49,14 @@
   &:active {
     transform: scale(0.98);
   }
+}
+
+// features btn
+.features-row-feature-btn {
+  @include resetBtn;
+  color: white;
+  background: $quaternary-color;
+  padding: 0.5rem 2rem;
 }
 
 // Terms and conditions button
@@ -73,17 +72,12 @@
 }
 
 //submit create profile btn
-
 .submit-btn {
   width: 100%;
   padding: 1rem;
   background-color: $quaternary-color;
   color: white;
-  border-radius: 3px;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: none;
-  outline: none;
+
   &:hover {
     background-color: lighten($quaternary-color, 10%);
   }
