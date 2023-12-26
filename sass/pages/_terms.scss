@@ -1,6 +1,3 @@
-.main-header {
-  width: 700px;
-  max-width: 95%;
-  margin: 0 auto;
-  padding: 2rem;
+.terms {
+  @include easyBlocks;
 }

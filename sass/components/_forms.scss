@@ -6,11 +6,7 @@
   margin: 0 auto;
 
   &-title {
-    text-align: center;
-
-    font-size: clamp(2.5rem, 3vw, 3.5rem);
-    text-transform: uppercase;
-    color: $quaternary-color;
+    @include secondaryHeading;
   }
 
   &-form {

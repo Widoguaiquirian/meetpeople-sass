@@ -8,6 +8,14 @@
   display: flex;
 }
 
+// For text blocks with plain text like terms and conditions, info, etc
+@mixin easyBlocks {
+  width: 700px;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 @mixin primaryHeading {
   font-size: clamp(2rem, 3vw, 3.5rem);
   text-transform: uppercase;
@@ -20,6 +28,16 @@
   margin-bottom: 3rem;
   text-align: center;
   width: 100%;
+}
+
+@mixin secondaryHeading {
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  width: 100%;
+  text-align: center;
+  color: $quaternary-color;
 }
 
 @mixin tertiaryheading {
