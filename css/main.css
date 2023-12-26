@@ -335,6 +335,12 @@ li {
   animation-timing-function: ease-in-out;
 }
 
+@media (max-width: 800px) {
+  .register-main {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+}
 .features {
   background: rgba(181, 181, 181, 0.208);
   padding: 3rem;
