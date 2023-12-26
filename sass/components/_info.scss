@@ -15,17 +15,18 @@
       padding: 3rem;
       min-width: fit-content;
 
-      &-title {
-        font-size: clamp(2rem, 5vw, 3rem);
-        padding: 0;
-        margin: 0;
+      .secondary-heading {
+        font-size: clamp(3rem, 3vw, 3.5rem);
+        font-weight: bold;
       }
     }
 
-    &-text {
-      padding: 3rem;
+    .plain-text {
       letter-spacing: 1px;
       font-size: clamp(1.5rem, 2vw, 2rem);
+      align-items: center;
+      margin: 0;
+      padding: 0 1rem;
     }
   }
 
@@ -44,6 +45,28 @@
       i {
         margin-right: 2rem;
         font-size: clamp(2rem, 4vw, 4rem);
+      }
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 700px) {
+  .info {
+    &-main {
+      flex-direction: column;
+
+      &-hero {
+        padding: 0;
+
+        .secondary-heading {
+          margin: 1rem;
+        }
+      }
+
+      .plain-text {
+        padding: 2rem;
+        text-align: center;
       }
     }
   }

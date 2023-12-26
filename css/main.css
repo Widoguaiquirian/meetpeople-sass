@@ -392,6 +392,7 @@ li {
     width: 85%;
     height: max-content;
     margin: 1rem 0;
+    padding: 3rem 1rem;
   }
   .features-row-feature-icon {
     margin: 0;
@@ -513,15 +514,16 @@ li {
   padding: 3rem;
   min-width: fit-content;
 }
-.info-main-hero-title {
-  font-size: clamp(2rem, 5vw, 3rem);
-  padding: 0;
-  margin: 0;
+.info-main-hero .secondary-heading {
+  font-size: clamp(3rem, 3vw, 3.5rem);
+  font-weight: bold;
 }
-.info-main-text {
-  padding: 3rem;
+.info-main .plain-text {
   letter-spacing: 1px;
   font-size: clamp(1.5rem, 2vw, 2rem);
+  align-items: center;
+  margin: 0;
+  padding: 0 1rem;
 }
 .info-tabs {
   display: flex;
@@ -540,6 +542,21 @@ li {
   font-size: clamp(2rem, 4vw, 4rem);
 }
 
+@media (max-width: 700px) {
+  .info-main {
+    flex-direction: column;
+  }
+  .info-main-hero {
+    padding: 0;
+  }
+  .info-main-hero .secondary-heading {
+    margin: 1rem;
+  }
+  .info-main .plain-text {
+    padding: 2rem;
+    text-align: center;
+  }
+}
 .main {
   max-width: 160rem;
   margin: 0 auto;
