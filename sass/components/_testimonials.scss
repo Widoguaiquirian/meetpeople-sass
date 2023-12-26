@@ -1,0 +1,11 @@
+.bg {
+  height: 60vh;
+  width: 100%;
+  position: relative;
+
+  &-video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
