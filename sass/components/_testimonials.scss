@@ -1,18 +1,89 @@
-.bg {
-  height: 60vh;
-  width: 100%;
+.testimonials {
+  padding: 5rem 0;
   position: relative;
 
-  &-video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 0 0 3px 3px;
+  &-title {
+    @include primaryHeading;
   }
 
-  .bg-testimonials {
-    position: absolute;
+  &-shape {
+    width: 70%;
+    margin: 0 auto 4rem auto;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.178);
+    background: rgba(255, 255, 255, 0.568);
+    border-radius: 3px;
+    display: block;
+    padding: 2rem;
+    padding-left: 9rem;
+    transform: skewX(-8deg);
+    position: relative;
+    transition: 0.3s;
+
+    &-circle {
+      float: left;
+      shape-outside: circle(50% at 50% 50%);
+      width: 15rem;
+      height: 15rem;
+      margin: 0;
+      padding: 0;
+      transform: translateX(-2rem) skewX(8deg);
+      clip-path: circle(50% at 50% 50%);
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s;
+        transform: scale(1.2);
+      }
+    }
+
+    &-text {
+      h3,
+      p {
+        margin: 0.5rem 0;
+        transform: skewX(8deg);
+      }
+    }
+
+    figcaption {
+      position: absolute;
+      top: 120%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      opacity: 0;
+    }
+
+    &:hover figcaption {
+      top: 50%;
+      opacity: 1;
+    }
+
+    &:hover {
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+    }
+
+    &:hover &-circle img {
+      transform: scale(1);
+      filter: blur(1px);
+    }
+  }
+
+  &-video {
     width: 100%;
-    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 30%;
+    z-index: -1;
+  }
+
+  &-btn {
+    color: white;
   }
 }

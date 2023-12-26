@@ -82,3 +82,9 @@
     background-color: lighten($quaternary-color, 10%);
   }
 }
+
+// Read stories btn
+.testimonials-btn {
+  @include resetBtn;
+  color: $quaternary-color;
+}
