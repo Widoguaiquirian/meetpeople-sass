@@ -27,6 +27,7 @@
       align-items: center;
       margin: 0;
       padding: 0 1rem;
+      text-align: justify;
     }
   }
 
@@ -43,14 +44,23 @@
       align-items: center;
 
       i {
-        margin-right: 2rem;
-        font-size: clamp(2rem, 4vw, 4rem);
+        margin-right: 1rem;
+        font-size: clamp(1.2rem, 4vw, 4rem);
       }
     }
   }
 }
 
 // Responsive
+
+@media (max-width: 900px) {
+  .info {
+    &-tabs {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 700px) {
   .info {
     &-main {
