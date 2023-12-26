@@ -1,8 +1,7 @@
 // Profile form
-.main-profile {
+.profile {
   padding: 5rem 0;
   max-width: 99%;
-
   margin: 0 auto;
 
   &-title {
@@ -16,7 +15,7 @@
 
     //adding height only the first fieldset
     fieldset:nth-child(1) {
-      height: 660px;
+      height: 760px;
       margin-bottom: 2rem;
     }
 
@@ -36,7 +35,7 @@
         padding: 0 2rem;
       }
 
-      .main-profile-form-row {
+      .profile-form-row {
         display: flex;
         height: 30px;
 
@@ -61,6 +60,7 @@
           background: rgba(128, 128, 128, 0.055);
           border: none;
           vertical-align: middle;
+          padding: 0 0.5rem;
         }
 
         textarea {
@@ -75,9 +75,31 @@
         }
       }
 
-      .main-profile-form-row:not(:last-child) {
+      .profile-form-row:not(:last-child) {
         margin-bottom: 2rem;
       }
+    }
+  }
+}
+
+// Styles for the intereset section with multiple choices
+.profile-form-row-interests {
+  display: flex;
+
+  .title-label {
+    min-width: 110px;
+    text-align: right;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: clamp(1.4rem, 2vw, 1.6rem);
+  }
+
+  &-options {
+    label {
+      flex-wrap: wrap;
+      margin-right: 1rem;
     }
   }
 }

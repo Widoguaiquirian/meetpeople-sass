@@ -45,23 +45,23 @@
 
   <body>
     <header class="header-profile"></header>
-    <section class="main-profile">
-      <h1 class="main-profile-title">Registration page</h1>
-      <form class="main-profile-form">
+    <section class="profile">
+      <h1 class="profile-title">Registration page</h1>
+      <form class="profile-form">
         <fieldset>
           <legend>Let's start with the basics</legend>
           <!-- Username -->
-          <div class="main-profile-form-row">
+          <div class="profile-form-row">
             <label for="username">Username <span class="star">*</span></label>
             <input type="text" name="username" id="username" required />
           </div>
           <!-- Name -->
-          <div class="main-profile-form-row">
+          <div class="profile-form-row">
             <label for="name">Name <span class="star">*</span></label>
             <input type="text" name="name" id="names" required />
           </div>
           <!-- Email -->
-          <div class="main-profile-form-row">
+          <div class="profile-form-row">
             <label for="email">Email <span class="star">*</span></label>
             <input
               type="email"
@@ -72,65 +72,70 @@
             />
           </div>
           <!-- Password -->
-          <div class="main-profile-form-row">
+          <div class="profile-form-row">
             <label for="password">Enter password</label>
             <input type="password" required />
           </div>
           <!-- Password x2 -->
-          <div class="main-profile-form-row">
+          <div class="profile-form-row">
             <label for="password">Repeat password</label>
             <input type="password" required />
           </div>
+
           <!-- Interests -->
-          <!-- <div class="main-profile-form-row">
-            <label class="local">
-              <input type="checkbox" name="local" value="local" />
-              Local
-            </label>
-            <label class="global">
-              <input type="checkbox" name="global" value="global" />
-              Make friends worldwide
-            </label>
-            <label class="pets">
-              <input type="checkbox" name="pets" value="pets" />
-              Friends with pets
-            </label>
-            <label class="kids">
-              <input type="checkbox" name="kids" value="kids" />
-              Friends with kids
-            </label>
-            <label class="excercise">
-              <input type="checkbox" name="excercise" value="excercise" />
-              Excercise friends
-            </label>
-            <label class="club">
-              <input type="checkbox" name="club" value="club" />
-              Join/start a club
-            </label>
-            <label class="night">
-              <input type="checkbox" name="night" value="night" />
-              Plans for tonight
-            </label>
-            <label class="double">
-              <input type="checkbox" name="double" value="double" />
-              Go double date
-            </label>
-            <label class="eating">
-              <input type="checkbox" name="eating" value="eating" />
-              Eating out
-            </label>
-            <label class="others">
-              <input type="checkbox" name="others" value="others" />
-              Others
-            </label>
-          </div> -->
+          <div class="profile-form-row-interests">
+            <label class="title-label" for="interests">Looking for:</label>
+            <div class="profile-form-row-interests-options">
+              <label class="local">
+                <input type="checkbox" name="local" value="local" />
+                Local friends
+              </label>
+              <label class="global">
+                <input type="checkbox" name="global" value="global" />
+                Friends worldwide
+              </label>
+              <label class="pets">
+                <input type="checkbox" name="pets" value="pets" />
+                Friends with pets
+              </label>
+              <label class="kids">
+                <input type="checkbox" name="kids" value="kids" />
+                Friends with kids
+              </label>
+              <label class="excercise">
+                <input type="checkbox" name="excercise" value="excercise" />
+                Excercise friends
+              </label>
+              <label class="club">
+                <input type="checkbox" name="club" value="club" />
+                Join/start a club
+              </label>
+              <label class="night">
+                <input type="checkbox" name="night" value="night" />
+                Plans for tonight
+              </label>
+              <label class="double">
+                <input type="checkbox" name="double" value="double" />
+                Go double date
+              </label>
+              <label class="eating">
+                <input type="checkbox" name="eating" value="eating" />
+                Eating out
+              </label>
+              <label class="others">
+                <input type="checkbox" name="others" value="others" />
+                Others
+              </label>
+            </div>
+          </div>
+
           <!-- Date of birth -->
-          <div class="main-profile-form-row">
+          <div class="profile-form-row">
             <label for="date">Date of birth</label>
             <input type="date" required />
           </div>
           <!-- Gender -->
-          <div class="main-profile-form-row">
+          <div class="profile-form-row">
             <label for="gender">Gender <span class="star">*</span></label>
             <select name="gender" id="gender" required>
               <option value=" " selected></option>
@@ -141,24 +146,24 @@
             </select>
           </div>
           <!-- Country -->
-          <div class="main-profile-form-row">
+          <div class="profile-form-row">
             <label for="country">Country</label>
             <select name="countries" id="countries"></select>
           </div>
           <!-- city -->
-          <div class="main-profile-form-row">
+          <div class="profile-form-row">
             <label for="city">City <span class="star">*</span></label>
             <input type="text" name="city" id="city" required />
           </div>
           <!-- Photo -->
-          <div class="main-profile-form-row">
+          <div class="profile-form-row">
             <label for="photo"
               >Your profile picture <span class="star">*</span></label
             >
             <input type="file" name="photo" id="photo" required />
           </div>
           <!-- About me -->
-          <div class="main-profile-form-row">
+          <div class="profile-form-row">
             <label for="about">About me:</label>
             <textarea
               name="about"

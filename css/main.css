@@ -93,7 +93,7 @@ li {
   display: flex;
 }
 .about-row .tertiary-heading {
-  font-size: clamp(1.6rem, 2vw, 2.2rem);
+  font-size: clamp(2rem, 2vw, 2.2rem);
   font-weight: bold;
   margin: 0;
 }
@@ -104,6 +104,21 @@ li {
   width: 50%;
 }
 
+@media (max-width: 900px) {
+  .about {
+    background: rgba(181, 181, 181, 0.208);
+    padding: 1rem;
+    text-align: center;
+  }
+  .about-row-block {
+    width: 100%;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  .about-row-block:last-child {
+    display: none;
+  }
+}
 /* Hero section animation */
 @keyframes moveIn {
   0% {
@@ -362,12 +377,12 @@ li {
   transform: translateY(-5px) skewY(5deg);
 }
 
-.main-profile {
+.profile {
   padding: 5rem 0;
   max-width: 99%;
   margin: 0 auto;
 }
-.main-profile-title {
+.profile-title {
   font-size: clamp(2rem, 3vw, 3.5rem);
   font-weight: bold;
   text-transform: uppercase;
@@ -376,34 +391,34 @@ li {
   text-align: center;
   color: #2f4858;
 }
-.main-profile-form {
+.profile-form {
   width: 600px;
   max-width: 99%;
   margin: 4rem auto;
 }
-.main-profile-form fieldset:nth-child(1) {
-  height: 660px;
+.profile-form fieldset:nth-child(1) {
+  height: 760px;
   margin-bottom: 2rem;
 }
-.main-profile-form fieldset:nth-child(2) {
+.profile-form fieldset:nth-child(2) {
   height: 120px;
   margin-bottom: 2rem;
 }
-.main-profile-form fieldset {
+.profile-form fieldset {
   border: 1px solid rgba(128, 128, 128, 0.233);
   border-radius: 3px;
   max-width: 100%;
 }
-.main-profile-form fieldset legend {
+.profile-form fieldset legend {
   font-size: clamp(2rem, 3vw, 2.5rem);
   color: #2f4858;
   padding: 0 2rem;
 }
-.main-profile-form fieldset .main-profile-form-row {
+.profile-form fieldset .profile-form-row {
   display: flex;
   height: 30px;
 }
-.main-profile-form fieldset .main-profile-form-row label {
+.profile-form fieldset .profile-form-row label {
   min-width: 110px;
   text-align: right;
   margin-right: 1rem;
@@ -412,28 +427,46 @@ li {
   justify-content: flex-end;
   font-size: clamp(1.4rem, 2vw, 1.6rem);
 }
-.main-profile-form fieldset .main-profile-form-row label .star {
+.profile-form fieldset .profile-form-row label .star {
   color: red;
   font-weight: bold;
   margin-left: 0.4rem;
 }
-.main-profile-form fieldset .main-profile-form-row input {
+.profile-form fieldset .profile-form-row input {
   width: 100%;
   background: rgba(128, 128, 128, 0.055);
   border: none;
   vertical-align: middle;
+  padding: 0 0.5rem;
 }
-.main-profile-form fieldset .main-profile-form-row textarea {
+.profile-form fieldset .profile-form-row textarea {
   width: 100%;
   resize: none;
   padding: 0.5rem 1rem;
   height: 100px;
 }
-.main-profile-form fieldset .main-profile-form-row select {
+.profile-form fieldset .profile-form-row select {
   width: 100%;
 }
-.main-profile-form fieldset .main-profile-form-row:not(:last-child) {
+.profile-form fieldset .profile-form-row:not(:last-child) {
   margin-bottom: 2rem;
+}
+
+.profile-form-row-interests {
+  display: flex;
+}
+.profile-form-row-interests .title-label {
+  min-width: 110px;
+  text-align: right;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: clamp(1.4rem, 2vw, 1.6rem);
+}
+.profile-form-row-interests-options label {
+  flex-wrap: wrap;
+  margin-right: 1rem;
 }
 
 .info {

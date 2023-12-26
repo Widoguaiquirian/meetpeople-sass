@@ -26,3 +26,21 @@
     }
   }
 }
+
+// responsive
+@media (max-width: 900px) {
+  .about {
+    @include mainContainerMobile;
+
+    &-row {
+      &-block {
+        width: 100%;
+        text-align: center;
+        padding: 0 2rem;
+      }
+      &-block:last-child {
+        display: none;
+      }
+    }
+  }
+}
