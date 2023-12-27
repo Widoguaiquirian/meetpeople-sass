@@ -155,6 +155,41 @@ li {
     right: -6rem;
   }
 }
+.app {
+  background: rgba(181, 181, 181, 0.208);
+  padding: 3rem;
+  text-align: center;
+  background: #2f4858;
+  color: white;
+  height: 100px;
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app h2 {
+  margin: 0;
+  color: white;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+}
+.app-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-hero-block {
+  background: gray;
+  border-radius: 5px;
+  margin: 0 1rem;
+  padding: 0.6rem;
+  width: clamp(35px, 3vw, 80px);
+  height: clamp(35px, 3vw, 80px);
+}
+.app-hero-block img {
+  width: 100%;
+  height: 100%;
+}
+
 /* Hero section buttons */
 .header-hero-btn {
   cursor: pointer;
@@ -742,6 +777,9 @@ li {
 .footer-hero a {
   color: white;
 }
+.footer-hero a:hover {
+  color: #999999;
+}
 .footer-last {
   display: flex;
   justify-content: space-between;
@@ -804,7 +842,7 @@ li {
 }
 .header-hero {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   border-radius: 0.5rem;
   transform: translate(-50%, -50%);
@@ -851,6 +889,9 @@ li {
   color: white;
   font-size: 1.6rem;
   font-weight: bold;
+}
+.nav-list-item a:hover {
+  color: #999999;
 }
 
 .qr {

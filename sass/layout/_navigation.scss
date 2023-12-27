@@ -16,6 +16,9 @@
         color: white;
         font-size: 1.6rem;
         font-weight: bold;
+        &:hover {
+          color: darken(white, 40%);
+        }
       }
     }
   }
