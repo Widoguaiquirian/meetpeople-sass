@@ -6,84 +6,75 @@
     @include primaryHeading;
   }
 
-  &-shape {
-    width: 70%;
-    margin: 0 auto 4rem auto;
-    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.178);
-    background: rgba(255, 255, 255, 0.568);
-    border-radius: 3px;
-    display: block;
-    padding: 2rem;
-    padding-left: 9rem;
-    transform: skewX(-8deg);
-    position: relative;
-    transition: 0.3s;
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    max-width: 95%;
+    margin: 0 auto;
+    align-items: center;
 
-    &-circle {
-      float: left;
-      shape-outside: circle(50% at 50% 50%);
-      width: 15rem;
-      height: 15rem;
-      margin: 0;
-      padding: 0;
-      transform: translateX(-2rem) skewX(8deg);
-      clip-path: circle(50% at 50% 50%);
+    .slideshow {
+      width: 100%;
+      overflow: hidden;
 
-      img {
-        height: 100%;
-        object-fit: cover;
-        transition: all 0.3s;
-        transform: scale(1.2);
+      margin: 0 2rem;
+
+      .testimonials-box-row {
+        display: flex;
+        transition: all 0.3s ease-in-out;
       }
     }
 
-    &-text {
-      h3,
-      p {
-        margin: 0.5rem 0;
-        transform: skewX(8deg);
+    .testimonials-shape {
+      min-width: 360px;
+      border: 1px solid rgba(128, 128, 128, 0.445);
+      background: rgba(255, 255, 255, 0.568);
+      border-radius: 3px;
+      height: auto;
+      display: block;
+      padding: 1rem;
+      padding-left: 4rem;
+      margin-right: 1rem;
+      position: relative;
+      transition: 0.3s;
+
+      &-circle {
+        float: left;
+        shape-outside: circle(50% at 50% 50%);
+        width: 10rem;
+        height: 10rem;
+        margin: 0;
+        padding: 0;
+        transform: translateX(-2rem);
+        clip-path: circle(50% at 50% 50%);
+
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &-text {
+        height: 160px;
+
+        h3 {
+          margin: 0;
+        }
       }
     }
 
-    figcaption {
-      position: absolute;
-      top: 120%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-weight: bold;
-      text-align: center;
-      text-transform: uppercase;
-      transition: all 0.3s;
-      opacity: 0;
+    .arrows {
+      font-size: 3rem;
+      opacity: 50%;
+      color: $quaternary-color;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.4);
+        opacity: 100%;
+      }
     }
-
-    &:hover figcaption {
-      top: 50%;
-      opacity: 1;
-    }
-
-    &:hover {
-      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
-    }
-
-    &:hover &-circle img {
-      transform: scale(1);
-      filter: blur(1px);
-    }
-  }
-
-  &-video {
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 30%;
-    z-index: -1;
-  }
-
-  &-btn {
-    color: white;
   }
 }

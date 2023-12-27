@@ -86,5 +86,7 @@
 // Read stories btn
 .testimonials-btn {
   @include resetBtn;
-  color: $quaternary-color;
+  color: white;
+  background: $quaternary-color;
+  padding: 0.5rem 2rem;
 }
