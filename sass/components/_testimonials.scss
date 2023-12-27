@@ -101,9 +101,27 @@
       .testimonials-box-row {
         justify-content: start;
         .testimonials-shape {
-          min-width: 278px;
+          margin-right: 1rem;
+          &-circle {
+            width: 5rem;
+            height: 5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 453px) {
+  .testimonials-box {
+    .slideshow {
+      margin: 0 0.8rem;
+      .testimonials-box-row {
+        .testimonials-shape {
+          padding: 1rem 3rem;
+          min-width: 302px;
           height: 210px;
-          margin-right: 9.2rem;
+          margin-right: 6.8rem;
           &-circle {
             width: 5rem;
             height: 5rem;
