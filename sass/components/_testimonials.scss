@@ -9,20 +9,19 @@
   &-box {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
-    max-width: 95%;
+    width: 1210px;
+    max-width: 99%;
     margin: 0 auto;
     align-items: center;
 
     .slideshow {
-      width: 100%;
       overflow: hidden;
-
       margin: 0 2rem;
 
       .testimonials-box-row {
         display: flex;
         transition: all 0.3s ease-in-out;
+        max-width: 100%;
       }
     }
 
@@ -32,10 +31,10 @@
       background: rgba(255, 255, 255, 0.568);
       border-radius: 3px;
       height: auto;
-      display: block;
+
       padding: 1rem;
       padding-left: 4rem;
-      margin-right: 1rem;
+      margin-right: 1.2rem;
       position: relative;
       transition: 0.3s;
 
@@ -74,6 +73,42 @@
       &:hover {
         transform: scale(1.4);
         opacity: 100%;
+      }
+    }
+  }
+}
+
+//responsive
+
+@media (max-width: 1300px) {
+  .testimonials-box {
+    width: 835px;
+  }
+}
+
+@media (max-width: 900px) {
+  .testimonials-box {
+    width: 460px;
+  }
+}
+
+@media (max-width: 510px) {
+  .testimonials-box {
+    .arrows {
+      font-size: 1.4rem;
+    }
+    .slideshow {
+      .testimonials-box-row {
+        justify-content: start;
+        .testimonials-shape {
+          min-width: 278px;
+          height: 210px;
+          margin-right: 9.2rem;
+          &-circle {
+            width: 5rem;
+            height: 5rem;
+          }
+        }
       }
     }
   }
