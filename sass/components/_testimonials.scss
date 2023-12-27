@@ -1,7 +1,7 @@
 .testimonials {
   padding: 5rem 0;
   position: relative;
-
+  background: rgba(181, 181, 181, 0.208);
   &-title {
     @include primaryHeading;
   }
@@ -29,6 +29,7 @@
       min-width: 360px;
       border: 1px solid rgba(128, 128, 128, 0.445);
       box-shadow: 2px 2px 2px $primary-color;
+      background: rgba(255, 255, 255, 0.801);
       border-radius: 5px;
       height: auto;
 

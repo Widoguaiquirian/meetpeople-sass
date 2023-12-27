@@ -1,0 +1,72 @@
+.footer {
+  @include mainContainer;
+  margin: 1rem 0;
+  background: $quaternary-color;
+
+  &-hero {
+    padding: 1rem 0;
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    color: white;
+    text-align: left;
+
+    &-block {
+      flex-basis: 25%;
+      margin: 0 1rem;
+
+      &:first-child {
+        padding-right: 10rem;
+      }
+
+      h4 {
+        margin: 0 0 2rem 0;
+      }
+    }
+
+    a {
+      color: white;
+    }
+  }
+
+  &-last {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    color: white;
+  }
+}
+
+// mobile
+@media (max-width: 650px) {
+  .footer {
+    padding: 1rem;
+    &-hero {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+
+      &-block {
+        margin-bottom: 3rem;
+        h4 {
+          margin: 0;
+        }
+        p {
+          margin: 0;
+        }
+        &:first-child {
+          padding-right: 0;
+        }
+      }
+    }
+
+    &-last {
+      img {
+        width: 5rem;
+      }
+    }
+  }
+}
