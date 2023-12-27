@@ -610,6 +610,7 @@ li {
 .testimonials-box .slideshow {
   overflow: hidden;
   margin: 0 2rem;
+  height: 190px;
 }
 .testimonials-box .slideshow .testimonials-box-row {
   display: flex;
@@ -619,8 +620,8 @@ li {
 .testimonials-box .testimonials-shape {
   min-width: 360px;
   border: 1px solid rgba(128, 128, 128, 0.445);
-  background: rgba(255, 255, 255, 0.568);
-  border-radius: 3px;
+  box-shadow: 2px 2px 2px #ec672d;
+  border-radius: 5px;
   height: auto;
   padding: 1rem;
   padding-left: 4rem;
@@ -687,12 +688,13 @@ li {
 }
 @media (max-width: 453px) {
   .testimonials-box .slideshow {
+    height: 235px;
     margin: 0 0.8rem;
   }
   .testimonials-box .slideshow .testimonials-box-row .testimonials-shape {
     padding: 1rem 3rem;
     min-width: 302px;
-    height: 210px;
+    height: 200px;
     margin-right: 6.8rem;
   }
   .testimonials-box .slideshow .testimonials-box-row .testimonials-shape-circle {

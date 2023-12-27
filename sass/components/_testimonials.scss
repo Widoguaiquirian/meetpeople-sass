@@ -17,7 +17,7 @@
     .slideshow {
       overflow: hidden;
       margin: 0 2rem;
-
+      height: 190px;
       .testimonials-box-row {
         display: flex;
         transition: all 0.3s ease-in-out;
@@ -28,8 +28,8 @@
     .testimonials-shape {
       min-width: 360px;
       border: 1px solid rgba(128, 128, 128, 0.445);
-      background: rgba(255, 255, 255, 0.568);
-      border-radius: 3px;
+      box-shadow: 2px 2px 2px $primary-color;
+      border-radius: 5px;
       height: auto;
 
       padding: 1rem;
@@ -79,7 +79,6 @@
 }
 
 //responsive
-
 @media (max-width: 1300px) {
   .testimonials-box {
     width: 835px;
@@ -115,13 +114,15 @@
 @media (max-width: 453px) {
   .testimonials-box {
     .slideshow {
+      height: 235px;
       margin: 0 0.8rem;
       .testimonials-box-row {
         .testimonials-shape {
           padding: 1rem 3rem;
           min-width: 302px;
-          height: 210px;
+          height: 200px;
           margin-right: 6.8rem;
+
           &-circle {
             width: 5rem;
             height: 5rem;
