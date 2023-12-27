@@ -1,0 +1,40 @@
+.nav {
+  max-width: 1500px;
+  padding: 3rem 0.5rem;
+  display: flex;
+  justify-content: end;
+
+  &-list {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 10rem;
+
+    &-item {
+      margin: 0 2rem;
+      a {
+        color: white;
+        font-size: 2.2rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.qr {
+  position: relative;
+  transition: all 0.8s;
+
+  .qr-image {
+    border-radius: 5px;
+    width: 100px;
+    position: absolute;
+    right: 0px;
+    top: 36px;
+    visibility: hidden;
+  }
+
+  &:hover .qr-image {
+    visibility: visible;
+  }
+}

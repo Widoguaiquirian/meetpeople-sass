@@ -832,6 +832,43 @@ li {
   margin-bottom: 2rem;
 }
 
+.nav {
+  max-width: 1500px;
+  padding: 3rem 0.5rem;
+  display: flex;
+  justify-content: end;
+}
+.nav-list {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-right: 10rem;
+}
+.nav-list-item {
+  margin: 0 2rem;
+}
+.nav-list-item a {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.qr {
+  position: relative;
+  transition: all 0.8s;
+}
+.qr .qr-image {
+  border-radius: 5px;
+  width: 100px;
+  position: absolute;
+  right: 0px;
+  top: 36px;
+  visibility: hidden;
+}
+.qr:hover .qr-image {
+  visibility: visible;
+}
+
 .header-profile {
   background-image: url(../images/people-3-large.jpg);
   background-repeat: no-repeat;
