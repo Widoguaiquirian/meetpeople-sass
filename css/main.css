@@ -293,6 +293,10 @@ li {
   padding: 0.5rem 2rem;
 }
 
+.header-nav-mobile--openNav i {
+  background: red;
+}
+
 .about-row-block-collage {
   margin: 0 auto;
   text-align: center;
@@ -832,14 +836,6 @@ li {
   background-size: cover;
   position: relative;
 }
-.header-logo {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-.header-logo-svg {
-  height: 3.5rem;
-}
 .header-hero {
   position: absolute;
   top: 50%;
@@ -870,44 +866,56 @@ li {
   margin-bottom: 2rem;
 }
 
-.nav {
-  max-width: 1500px;
-  padding: 3rem 0.5rem;
+.header-nav {
+  align-items: center;
+  justify-content: space-around;
   display: flex;
-  justify-content: end;
-}
-.nav-list {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  padding-right: 10rem;
-}
-.nav-list-item {
-  margin: 0 1.5rem;
-}
-.nav-list-item a {
-  color: white;
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-.nav-list-item a:hover {
-  color: #999999;
-}
-
-.qr {
-  position: relative;
-  transition: all 0.8s;
-}
-.qr .qr-image {
-  border-radius: 5px;
-  width: 100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
   position: absolute;
-  right: 0px;
-  top: 25px;
-  visibility: hidden;
+  width: 100%;
+  font-size: clamp(1.6rem, 2vw, 2rem);
 }
-.qr:hover .qr-image {
+.header-nav .header-logo img {
+  width: 150px;
+}
+.header-nav .header-nav-list-desktop {
+  display: flex;
+}
+.header-nav .header-nav-list-desktop .header-nav-list-item {
+  margin-left: 3rem;
+}
+.header-nav .header-nav-list-desktop .header-nav-list-item a {
+  transition: 0.2s ease;
+  color: white;
+}
+.header-nav .header-nav-list-desktop .header-nav-list-item a:hover {
+  color: #cccccc;
+}
+.header-nav .header-nav-list-desktop .qr {
+  position: relative;
+}
+.header-nav .header-nav-list-desktop .qr .qr-image {
+  width: 150px;
+  position: absolute;
+  top: 30px;
+  right: -20px;
+  border-radius: 15px;
+  height: 150px;
+  visibility: hidden;
+  transition: 0.4s ease;
+}
+.header-nav .header-nav-list-desktop .qr:hover .qr-image {
   visibility: visible;
+  transition: 0.4s ease;
+}
+.header-nav-mobile {
+  background: red;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 50px;
 }
 
 .header-profile {
