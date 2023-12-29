@@ -27,31 +27,31 @@
     }
 
     &-profile {
-      min-width: 40%;
       align-items: center;
-      justify-content: center;
       display: flex;
+      justify-content: center;
+      min-width: 40%;
 
       &-btn {
-        width: 200px;
-        height: 60px;
-        border-radius: 3px;
         align-items: center;
-        justify-content: center;
-        display: flex;
         background: $primary-color;
+        border-radius: 3px;
         color: white;
-        text-transform: uppercase;
+        display: flex;
+        height: 60px;
+        justify-content: center;
         position: relative;
+        text-transform: uppercase;
+        width: 200px;
 
         .hand {
-          position: absolute;
-          font-size: clamp(1.8rem, 3vw, 4rem);
-          transform: rotate(-50deg);
           animation-duration: 2s;
-          animation-name: handly;
           animation-iteration-count: infinite;
+          animation-name: handly;
           animation-timing-function: ease-in-out;
+          font-size: clamp(1.8rem, 3vw, 4rem);
+          position: absolute;
+          transform: rotate(-50deg);
         }
       }
     }

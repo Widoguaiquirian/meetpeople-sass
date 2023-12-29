@@ -1,46 +1,45 @@
 .header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 80vh;
-  overflow: hidden;
-  max-width: 3000px;
   margin: 0 auto;
+  max-width: 3000px;
+  overflow: hidden;
+  position: relative;
   background-image: linear-gradient(
       to right bottom,
       rgba(236, 102, 45, 0.3),
       hsla(350, 69%, 58%, 0.3)
     ),
     url(../images/hero-large.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-
   &-hero {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 0.5rem;
-    transform: translate(-50%, -50%);
-    padding: 2rem;
-    width: 45rem;
-    max-width: 90%;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.744);
     animation: moveIn 0.3s ease-in;
+    background: rgba(255, 255, 255, 0.744);
+    border-radius: 0.5rem;
+    left: 50%;
+    max-width: 90%;
+    padding: 2rem;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 45rem;
 
     &-title {
       color: $quaternary-color;
-      text-transform: uppercase;
-      text-align: center;
+      display: block;
       font-size: clamp(2rem, 4vw, 3rem);
       letter-spacing: 0.8rem;
       margin-right: -1rem;
-      display: block;
+      text-align: center;
+      text-transform: uppercase;
 
       span {
         display: block;
         font-size: clamp(1.5rem, 2.5vw, 2rem);
-        letter-spacing: normal;
         letter-spacing: 0.5rem;
+        letter-spacing: normal;
         margin-bottom: 2rem;
       }
     }

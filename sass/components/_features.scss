@@ -21,23 +21,23 @@
 
     &-feature {
       background-color: rgba(255, 255, 255, 0.863);
-      width: 300px;
       border-radius: 3px;
-      padding: 1rem 1.5rem;
+      color: $quaternary-color;
       height: 310px;
       margin: 0 1rem;
-      color: $quaternary-color;
-      transition: all 0.4s ease;
+      padding: 1rem 1.5rem;
       transform: skewY(5deg);
+      transition: all 0.4s ease;
+      width: 300px;
 
       &-icon {
-        width: 100%;
         display: block;
         margin: 2rem 0;
+        width: 100%;
 
         i {
-          font-size: clamp(3rem, 4vw, 5rem);
           color: $quaternary-color;
+          font-size: clamp(3rem, 4vw, 5rem);
         }
       }
 
@@ -54,17 +54,17 @@
   .features {
     padding: 5rem 0;
     &-row {
-      flex-direction: column;
-      transform: skewY(0);
       align-items: center;
+      flex-direction: column;
       justify-content: center;
+      transform: skewY(0);
 
       &-feature {
-        transform: skew(0);
-        width: 85%;
         height: max-content;
         margin: 1rem 0;
         padding: 3rem 1rem;
+        transform: skew(0);
+        width: 85%;
 
         &-icon {
           margin: 0;

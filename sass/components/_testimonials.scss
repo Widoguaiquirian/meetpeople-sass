@@ -1,53 +1,52 @@
 .testimonials {
+  background: rgba(181, 181, 181, 0.208);
   padding: 5rem 0;
   position: relative;
-  background: rgba(181, 181, 181, 0.208);
   &-title {
     @include primaryHeading;
   }
 
   &-box {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    width: 1210px;
-    max-width: 99%;
     margin: 0 auto;
-    align-items: center;
+    max-width: 99%;
+    width: 1210px;
 
     .slideshow {
-      overflow: hidden;
-      margin: 0 2rem;
       height: 190px;
+      margin: 0 2rem;
+      overflow: hidden;
       .testimonials-box-row {
         display: flex;
-        transition: all 0.3s ease-in-out;
         max-width: 100%;
+        transition: all 0.3s ease-in-out;
       }
     }
 
     .testimonials-shape {
-      min-width: 360px;
-      border: 1px solid rgba(128, 128, 128, 0.445);
-      box-shadow: 2px 2px 2px $primary-color;
       background: rgba(255, 255, 255, 0.801);
       border-radius: 5px;
+      border: 1px solid rgba(128, 128, 128, 0.445);
+      box-shadow: 2px 2px 2px $primary-color;
       height: auto;
-
+      margin-right: 1.2rem;
+      min-width: 360px;
       padding: 1rem;
       padding-left: 4rem;
-      margin-right: 1.2rem;
       position: relative;
       transition: 0.3s;
 
       &-circle {
+        clip-path: circle(50% at 50% 50%);
         float: left;
-        shape-outside: circle(50% at 50% 50%);
-        width: 10rem;
         height: 10rem;
         margin: 0;
         padding: 0;
+        shape-outside: circle(50% at 50% 50%);
         transform: translateX(-2rem);
-        clip-path: circle(50% at 50% 50%);
+        width: 10rem;
 
         img {
           height: 100%;
@@ -72,8 +71,8 @@
       transition: all 0.3s ease;
 
       &:hover {
-        transform: scale(1.4);
         opacity: 100%;
+        transform: scale(1.4);
       }
     }
   }
@@ -119,14 +118,14 @@
       margin: 0 0.8rem;
       .testimonials-box-row {
         .testimonials-shape {
-          padding: 1rem 3rem;
-          min-width: 302px;
           height: 200px;
           margin-right: 6.8rem;
+          min-width: 302px;
+          padding: 1rem 3rem;
 
           &-circle {
-            width: 5rem;
             height: 5rem;
+            width: 5rem;
           }
         }
       }

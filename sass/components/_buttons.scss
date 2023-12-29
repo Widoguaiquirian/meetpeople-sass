@@ -1,18 +1,17 @@
 /* Hero section buttons */
 .header-hero-btn {
   @include resetBtn;
-  padding: 0.5rem 1.5rem;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
-  color: white;
   background: $quaternary-color;
-  font-weight: bold;
-
+  color: white;
   display: inline-block;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: bold;
   margin: 0.5rem;
+  padding: 0.5rem 1.5rem;
 
   &:hover {
-    transform: scale(1.1);
     box-shadow: 0.1rem 0.4rem 0.3rem rgba(0, 0, 0, 0.227);
+    transform: scale(1.1);
   }
 
   &:active {
@@ -20,11 +19,11 @@
   }
 
   &:last-child {
-    padding: 0.5rem 1.5rem;
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
-    color: $secondary-color;
     background: transparent;
     border: 0.1rem solid $quaternary-color;
+    color: $secondary-color;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    padding: 0.5rem 1.5rem;
   }
 
   &:last-child:hover {
@@ -36,14 +35,14 @@
 // About button
 .about-row-btn {
   @include resetBtn;
-  color: white;
-  padding: 0.4rem 0.7rem;
-  display: inline-block;
   background-color: $quaternary-color;
+  color: white;
+  display: inline-block;
+  padding: 0.4rem 0.7rem;
 
   &:hover {
-    transform: translateY(-3px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.26);
+    transform: translateY(-3px);
   }
 
   &:active {
@@ -54,17 +53,17 @@
 // features btn
 .features-row-feature-btn {
   @include resetBtn;
-  color: white;
   background: $quaternary-color;
+  color: white;
   padding: 0.5rem 2rem;
 }
 
 // Terms and conditions button
 .terms-btn {
+  color: black;
   display: block;
   font-style: italic;
   width: max-content;
-  color: black;
 
   &:hover {
     color: rgba(0, 0, 0, 0.5);
@@ -73,10 +72,10 @@
 
 //submit create profile btn
 .submit-btn {
-  width: 100%;
-  padding: 1rem;
   background-color: $quaternary-color;
   color: white;
+  padding: 1rem;
+  width: 100%;
 
   &:hover {
     background-color: lighten($quaternary-color, 10%);
@@ -86,7 +85,7 @@
 // Read stories btn
 .testimonials-btn {
   @include resetBtn;
-  color: white;
   background: $quaternary-color;
+  color: white;
   padding: 0.5rem 2rem;
 }

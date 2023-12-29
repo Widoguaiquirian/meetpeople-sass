@@ -18,34 +18,34 @@
 
 // For text blocks with plain text like terms and conditions, info, etc
 @mixin easyBlocks {
-  width: 700px;
-  max-width: 95%;
   margin: 0 auto;
+  max-width: 95%;
   padding: 2rem;
+  width: 700px;
 }
 
 @mixin primaryHeading {
-  font-size: clamp(2rem, 3vw, 3.5rem);
-  text-transform: uppercase;
-  font-weight: 700;
-  background-image: linear-gradient($primary-color, $primary-dark-color);
-  display: inline-block;
   -webkit-background-clip: text;
+  background-image: linear-gradient($primary-color, $primary-dark-color);
   color: transparent;
-  transition: all 0.3s;
+  display: inline-block;
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  font-weight: 700;
   margin-bottom: 3rem;
   text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s;
   width: 100%;
 }
 
 @mixin secondaryHeading {
+  color: $quaternary-color;
   font-size: clamp(2rem, 3vw, 3.5rem);
   font-weight: bold;
-  text-transform: uppercase;
   margin-bottom: 3rem;
-  width: 100%;
   text-align: center;
-  color: $quaternary-color;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 @mixin tertiaryheading {

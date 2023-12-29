@@ -1,17 +1,17 @@
 // Profile form
 .profile {
-  padding: 5rem 0;
-  max-width: 99%;
   margin: 0 auto;
+  max-width: 99%;
+  padding: 5rem 0;
 
   &-title {
     @include secondaryHeading;
   }
 
   &-form {
-    width: 600px;
-    max-width: 99%;
     margin: 4rem auto;
+    max-width: 99%;
+    width: 600px;
 
     //adding height only the first fieldset
     fieldset:nth-child(1) {
@@ -40,13 +40,13 @@
         height: 30px;
 
         label {
+          align-items: center;
+          display: flex;
+          font-size: clamp(1.4rem, 2vw, 1.6rem);
+          justify-content: flex-end;
+          margin-right: 1rem;
           min-width: 110px;
           text-align: right;
-          margin-right: 1rem;
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          font-size: clamp(1.4rem, 2vw, 1.6rem);
 
           .star {
             color: red;
@@ -64,10 +64,10 @@
         }
 
         textarea {
-          width: 100%;
-          resize: none;
-          padding: 0.5rem 1rem;
           height: 100px;
+          padding: 0.5rem 1rem;
+          resize: none;
+          width: 100%;
         }
 
         select {
@@ -87,13 +87,13 @@
   display: flex;
 
   .title-label {
+    align-items: center;
+    display: flex;
+    font-size: clamp(1.4rem, 2vw, 1.6rem);
+    justify-content: flex-end;
+    margin-right: 1rem;
     min-width: 110px;
     text-align: right;
-    margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: clamp(1.4rem, 2vw, 1.6rem);
   }
 
   &-options {
