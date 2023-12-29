@@ -46,7 +46,7 @@ img[alt=""] {
 
 .sign {
   color: white;
-  font-size: clamp(0.6rem, 1vw, 1.6rem);
+  font-size: clamp(1rem, 1vw, 1.6rem);
 }
 .sign a {
   color: white;
@@ -787,7 +787,7 @@ li {
   margin: 0 auto;
   padding: 1rem 0;
   color: white;
-  font-size: clamp(0.6rem, 1vw, 1.6rem);
+  font-size: clamp(1rem, 1vw, 1.6rem);
 }
 
 @media (max-width: 650px) {
@@ -810,9 +810,6 @@ li {
   }
   .footer-hero-block:first-child {
     padding-right: 0;
-  }
-  .footer-last img {
-    width: 5rem;
   }
 }
 .main {
