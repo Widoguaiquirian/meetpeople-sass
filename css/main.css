@@ -927,6 +927,9 @@ li {
 .nav-mobile #nav-btn--close {
   margin: 1.5rem;
 }
+.nav-mobile .qrMobile img {
+  max-width: 50%;
+}
 .nav-mobile-ul {
   display: block;
 }
