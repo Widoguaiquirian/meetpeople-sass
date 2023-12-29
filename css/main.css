@@ -924,11 +924,9 @@ li {
   width: 30%;
   text-transform: uppercase;
 }
-.nav-mobile #nav-btn--close {
-  margin: 1.5rem;
-}
 .nav-mobile .qrMobile img {
-  max-width: 50%;
+  width: 50%;
+  margin-top: 0.5rem;
 }
 .nav-mobile-ul {
   display: block;
@@ -947,14 +945,15 @@ li {
   margin: 0 1rem;
 }
 .nav .nav-btn-icon {
-  background-color: #2f4858;
+  background-color: transparent;
+  color: white;
   border: none;
   cursor: pointer;
+  outline: none;
   display: none;
-  font-size: 3rem;
-  width: 40px;
-  color: white;
+  padding: 0;
   opacity: 0;
+  font-size: 3rem;
 }
 
 @media (max-width: 720px) {
@@ -971,6 +970,10 @@ li {
   display: block;
   visibility: visible;
   transform: translatex(0);
+}
+
+#nav-btn--close {
+  margin: 2rem 0 0 1.5rem;
 }
 
 .header-profile {

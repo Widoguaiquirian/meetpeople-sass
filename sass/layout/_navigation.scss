@@ -31,9 +31,6 @@
       }
     }
 
-    &-social {
-    }
-
     .qr {
       position: relative;
 
@@ -71,13 +68,10 @@
     width: 30%;
     text-transform: uppercase;
 
-    #nav-btn--close {
-      margin: 1.5rem;
-    }
-
     .qrMobile {
       img {
-        max-width: 50%;
+        width: 50%;
+        margin-top: 0.5rem;
       }
     }
 
@@ -104,14 +98,15 @@
 
   //   Open and close icon
   .nav-btn-icon {
-    background-color: $quaternary-color;
+    background-color: transparent;
+    color: white;
     border: none;
     cursor: pointer;
+    outline: none;
     display: none;
-    font-size: 3rem;
-    width: 40px;
-    color: white;
+    padding: 0;
     opacity: 0;
+    font-size: 3rem;
   }
 }
 
@@ -132,4 +127,8 @@
   display: block;
   visibility: visible;
   transform: translatex(0);
+}
+
+#nav-btn--close {
+  margin: 2rem 0 0 1.5rem;
 }
