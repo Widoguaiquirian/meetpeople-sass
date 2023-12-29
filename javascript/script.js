@@ -65,3 +65,16 @@ const nextSlide = function () {
 
 btnRight.addEventListener("click", nextSlide);
 btnLeft.addEventListener("click", prevSlide);
+
+// mobile menu
+const openMenuMobile = document.querySelector("#nav-btn--open");
+const closeMenuMobile = document.querySelector("#nav-btn--close");
+const hamburguerMenu = document.querySelector(".nav-mobile");
+
+openMenuMobile.addEventListener("click", function () {
+  hamburguerMenu.classList.add("active");
+});
+
+closeMenuMobile.addEventListener("click", function () {
+  hamburguerMenu.classList.remove("active");
+});

@@ -46,48 +46,65 @@
   <body>
     <!-- Header section -->
     <header class="header">
-      <!-- Navigation -->
-      <nav class="header-nav">
-        <button class="header-nav-mobile--openNav">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+      <!-- Navigation container -->
+      <nav class="nav">
+        <!-- Mobile navigation -->
+        <div class="nav-mobile">
+          <button class="nav-btn-icon" id="nav-btn--close">
+            <i class="fa-solid fa-x"></i>
+          </button>
 
-        <div class="header-logo">
+          <!-- mobile ul -->
+          <ul class="nav-mobile-ul">
+            <li class="nav-mobile-ul-item">
+              <a href="#" class="nav-mobile-ul-item-link">Finds friends</a>
+            </li>
+            <li class="nav-mobile-ul-item">
+              <a href="#" class="nav-mobile-ul-item-link">Login</a>
+            </li>
+            <li class="nav-mobile-ul-item">
+              <a href="#" class="nav-mobile-ul-item-link">Download the APP</a>
+            </li>
+          </ul>
+          <div class="nav-mobile-social">
+            <a href="#" class="nav-mobile-ul-item-link"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="nav-mobile-ul-item-link"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="nav-mobile-ul-item-link"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Desktop navigation-->
+        <div class="nav-logo nav-logo--desktop">
           <img
             src="images/logos/logo.svg"
             alt="hero logo"
-            class="header-logo-svg"
+            class="nav-logo-svg"
           />
         </div>
-        <!-- DEsktop navigation -->
-        <ul class="header-nav-list-desktop">
-          <li class="header-nav-list-item">
-            <a href="#" class="header-nav-list-item-link">Find friends</a>
-          </li>
-          <li class="header-nav-list-item">
-            <a href="#" class="header-nav-list-item-link">Login</a>
-          </li>
-          <li class="header-nav-list-item qr">
-            <a href="#" class="header-nav-list-item-link"
-              >Download APP <i class="fa-solid fa-qrcode"></i
-            ></a>
-            <img class="qr-image" src="../images/qrcodelg.png" alt="Luis qr" />
-          </li>
-          <li class="header-nav-list-item">
-            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
-          </li>
-          <li class="header-nav-list-item">
-            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
-          </li>
-          <li class="header-nav-list-item">
-            <a href="#"> <i class="fa-brands fa-facebook"></i></a>
-          </li>
-        </ul>
 
-        <!-- mobile navigation -->
-        <!-- <div class="header-nav-mobile">
-          <button class="header-nav-mobile--closeNav"></button>
-        </div> -->
+        <button class="nav-btn-icon" id="nav-btn--open">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- Desktop navigation-->
+        <div class="nav-desktop">
+          <ul class="nav-desktop-ul">
+            <li class="nav-desktop-ul-item">
+              <a href="#" class="nav-desktop-ul-item-link">Finds friends</a>
+            </li>
+            <li class="nav-desktop-ul-item">
+              <a href="#" class="nav-desktop-ul-item-link">Login</a>
+            </li>
+            <li class="nav-desktop-ul-item">
+              <a href="#" class="nav-desktop-ul-item-link">Download the APP</a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <div class="header-hero">

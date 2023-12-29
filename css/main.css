@@ -293,10 +293,6 @@ li {
   padding: 0.5rem 2rem;
 }
 
-.header-nav-mobile--openNav i {
-  background: red;
-}
-
 .about-row-block-collage {
   margin: 0 auto;
   text-align: center;
@@ -828,6 +824,7 @@ li {
 
 .header {
   height: 80vh;
+  overflow: hidden;
   max-width: 3000px;
   margin: 0 auto;
   background-image: linear-gradient(to right bottom, rgba(236, 102, 45, 0.3), hsla(350, 69%, 58%, 0.3)), url(../images/hero-large.jpg);
@@ -866,56 +863,84 @@ li {
   margin-bottom: 2rem;
 }
 
-.header-nav {
+.nav {
+  position: absolute;
+  align-items: center;
+  display: flex;
   align-items: center;
   justify-content: space-around;
-  display: flex;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  position: absolute;
   width: 100%;
-  font-size: clamp(1.6rem, 2vw, 2rem);
+  padding: 2rem 1rem;
 }
-.header-nav .header-logo img {
-  width: 150px;
-}
-.header-nav .header-nav-list-desktop {
+.nav-desktop-ul {
   display: flex;
 }
-.header-nav .header-nav-list-desktop .header-nav-list-item {
-  margin-left: 3rem;
+.nav-desktop-ul li {
+  margin: 0 2rem;
 }
-.header-nav .header-nav-list-desktop .header-nav-list-item a {
-  transition: 0.2s ease;
+.nav-desktop-ul li a {
+  color: white;
+  font-size: clamp(2rem, 3vw, 2.2rem);
+}
+.nav-mobile {
+  height: 100vh;
+  right: 0;
+  transform: translatex(290px);
+  position: fixed;
+  margin-top: 0.5rem;
+  top: 0;
+  transition: transform 0.2s ease-in-out;
+  z-index: 99;
+  background: #2f4858;
+  max-width: 290px;
+  min-width: 270px;
+  width: 30%;
+  text-transform: uppercase;
+}
+.nav-mobile #nav-btn--close {
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+.nav-mobile-ul {
+  display: block;
+}
+.nav-mobile-ul li {
+  margin: 2rem 0;
+  text-align: center;
+}
+.nav-mobile-ul li a {
   color: white;
 }
-.header-nav .header-nav-list-desktop .header-nav-list-item a:hover {
-  color: #cccccc;
+.nav-mobile-social {
+  text-align: center;
 }
-.header-nav .header-nav-list-desktop .qr {
-  position: relative;
+.nav-mobile-social a {
+  margin: 0 1rem;
 }
-.header-nav .header-nav-list-desktop .qr .qr-image {
-  width: 150px;
-  position: absolute;
-  top: 30px;
-  right: -20px;
-  border-radius: 15px;
-  height: 150px;
-  visibility: hidden;
-  transition: 0.4s ease;
+.nav .nav-btn-icon {
+  background-color: #2f4858;
+  border: none;
+  cursor: pointer;
+  display: none;
+  font-size: 3rem;
+  color: white;
+  opacity: 0;
 }
-.header-nav .header-nav-list-desktop .qr:hover .qr-image {
+
+@media (max-width: 670px) {
+  .nav-desktop {
+    display: none;
+  }
+  #nav-btn--close,
+  #nav-btn--open {
+    display: block;
+    opacity: 1;
+  }
+}
+.nav-mobile.active {
+  display: block;
   visibility: visible;
-  transition: 0.4s ease;
-}
-.header-nav-mobile {
-  background: red;
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100vh;
-  width: 50px;
+  transform: translatex(0);
 }
 
 .header-profile {

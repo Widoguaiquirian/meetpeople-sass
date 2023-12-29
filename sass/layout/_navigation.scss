@@ -1,62 +1,93 @@
-.header-nav {
+.nav {
+  position: absolute;
+  align-items: center;
+  display: flex;
   align-items: center;
   justify-content: space-around;
-  display: flex;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  position: absolute;
   width: 100%;
-  font-size: clamp(1.6rem, 2vw, 2rem);
+  padding: 2rem 1rem;
 
-  .header-logo {
-    img {
-      width: 150px;
+  &-desktop {
+    &-ul {
+      display: flex;
+      li {
+        margin: 0 2rem;
+        a {
+          color: white;
+          font-size: clamp(2rem, 3vw, 2.2rem);
+        }
+      }
     }
   }
 
-  .header-nav-list-desktop {
-    display: flex;
+  &-mobile {
+    height: 100vh;
+    right: 0;
+    transform: translatex(290px);
+    position: fixed;
+    margin-top: 0.5rem;
+    top: 0;
+    transition: transform 0.2s ease-in-out;
+    z-index: 99;
+    background: $quaternary-color;
+    max-width: 290px;
+    min-width: 270px;
+    width: 30%;
+    text-transform: uppercase;
 
-    .header-nav-list-item {
+    #nav-btn--close {
       margin-left: 3rem;
+      margin-top: 2rem;
+    }
 
-      a {
-        transition: 0.2s ease;
-        color: white;
-        &:hover {
-          color: darken(white, 20%);
+    &-ul {
+      display: block;
+
+      li {
+        margin: 2rem 0;
+        text-align: center;
+
+        a {
+          color: white;
         }
       }
     }
 
-    .qr {
-      position: relative;
-
-      .qr-image {
-        width: 150px;
-        position: absolute;
-        top: 30px;
-        right: -20px;
-        border-radius: 15px;
-        height: 150px;
-        visibility: hidden;
-        transition: 0.4s ease;
-      }
-
-      &:hover .qr-image {
-        visibility: visible;
-        transition: 0.4s ease;
+    &-social {
+      text-align: center;
+      a {
+        margin: 0 1rem;
       }
     }
   }
 
-  // mobile
-  &-mobile {
-    background: red;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    width: 50px;
+  //   Open and close icon
+  .nav-btn-icon {
+    background-color: $quaternary-color;
+    border: none;
+    cursor: pointer;
+    display: none;
+    font-size: 3rem;
+    color: white;
+    opacity: 0;
   }
+}
+
+@media (max-width: 670px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  #nav-btn--close,
+  #nav-btn--open {
+    display: block;
+    opacity: 1;
+  }
+}
+
+//
+.nav-mobile.active {
+  display: block;
+  visibility: visible;
+  transform: translatex(0);
 }
