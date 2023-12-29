@@ -18,11 +18,10 @@ img[alt=""] {
 // sign
 .sign {
   color: white;
-  font-size: 1rem;
+  font-size: clamp(0.6rem, 1vw, 1.6rem);
   a {
     color: white;
     text-decoration: underline;
-    letter-spacing: 1px;
   }
 }
 
