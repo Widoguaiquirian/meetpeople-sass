@@ -78,3 +78,26 @@ openMenuMobile.addEventListener("click", function () {
 closeMenuMobile.addEventListener("click", function () {
   hamburguerMenu.classList.remove("active");
 });
+
+//! Hook up
+const btnUp = document.getElementById("button-up");
+
+btnUp.addEventListener("click", scrollUp);
+
+function scrollUp() {
+  let currentScroll = document.documentElement.scrollTop;
+
+  if (currentScroll > 0) {
+    window.requestAnimationFrame(scrollUp);
+    window.scrollTo(0, currentScroll - currentScroll / 10);
+  }
+}
+
+window.onscroll = function () {
+  let scroll = document.documentElement.scrollTop;
+  if (scroll > 200) {
+    btnUp.style.transform = "scale(1)";
+  } else if (scroll < 200) {
+    btnUp.style.transform = "scale(0)";
+  }
+};

@@ -559,6 +559,37 @@ li {
   margin-right: 1rem;
 }
 
+#button-up {
+  position: fixed;
+  bottom: 50px;
+  background-color: #2f4858;
+  color: #ec672d;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  border: 3px solid #2f4858;
+  justify-content: center;
+  font-size: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+#button-up i {
+  transition: all 0.4s ease;
+}
+#button-up i:hover {
+  transform: translateY(-12px);
+}
+
+@media (max-width: 720px) {
+  #button-up {
+    font-size: 3rem;
+    right: 3rem;
+  }
+  #button-up i:hover {
+    transform: translateY(-8px);
+  }
+}
 .info {
   max-width: 90%;
   margin: 0 auto;
