@@ -40,7 +40,9 @@
       &:hover img {
         transform: translateY(30px);
         opacity: 1;
+        visibility: visible;
       }
+
       img {
         position: absolute;
         right: 10px;
@@ -49,6 +51,7 @@
         transition: all 0.3s ease;
         border-radius: 15px;
         opacity: 0;
+        visibility: hidden;
       }
     }
   }
@@ -100,6 +103,7 @@
     cursor: pointer;
     display: none;
     font-size: 3rem;
+    width: 40px;
     color: white;
     opacity: 0;
   }
