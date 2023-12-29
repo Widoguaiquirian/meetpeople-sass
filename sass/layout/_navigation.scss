@@ -7,15 +7,48 @@
   width: 100%;
   padding: 2rem 1rem;
 
+  a {
+    color: white;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: darken(white, 20%);
+    }
+  }
+
   &-desktop {
+    display: flex;
+    align-items: center;
+
     &-ul {
       display: flex;
       li {
-        margin: 0 2rem;
         a {
-          color: white;
-          font-size: clamp(2rem, 3vw, 2.2rem);
+          font-size: clamp(2rem, 3vw, 2rem);
         }
+      }
+    }
+
+    &-social {
+    }
+
+    .qr {
+      position: relative;
+
+      &:hover img {
+        transform: translateY(30px);
+        opacity: 1;
+      }
+      img {
+        position: absolute;
+        right: 10px;
+        width: 150px;
+        transform: translateY(100px);
+        transition: all 0.3s ease;
+        border-radius: 15px;
+        opacity: 0;
       }
     }
   }
@@ -36,8 +69,7 @@
     text-transform: uppercase;
 
     #nav-btn--close {
-      margin-left: 3rem;
-      margin-top: 2rem;
+      margin: 1.5rem;
     }
 
     &-ul {
@@ -73,7 +105,7 @@
   }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 720px) {
   .nav-desktop {
     display: none;
   }
