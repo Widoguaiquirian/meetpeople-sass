@@ -55,3 +55,33 @@ window.onscroll = function () {
     btnUp.style.transform = "scale(0)";
   }
 };
+
+// Testimonials slide
+const btnLeft = document.querySelector("#btnLeft");
+const btnRight = document.querySelector("#btnRight");
+const container = document.querySelector(".testimonials");
+const testimonials = document.querySelectorAll(".testimonials-row-block");
+
+let idx = 0;
+
+const changeImage = function () {
+  if (idx > testimonials.length - 1) {
+    idx = 0;
+  }
+
+  testimonials.forEach(function (testimonial) {
+    testimonial.style.transform = `translateX(${
+      -idx * testimonial.clientWidth
+    }px)`;
+  });
+};
+
+btnRight.addEventListener("click", function () {
+  idx++;
+  changeImage();
+});
+
+btnLeft.addEventListener("click", function () {
+  idx--;
+  changeImage();
+});

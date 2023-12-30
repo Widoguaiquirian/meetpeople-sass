@@ -1,11 +1,29 @@
 .testimonials {
   padding: 7rem 2rem;
-  overflow: hidden;
+  margin-bottom: 10rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+
+  .testimonials-btn {
+    position: absolute;
+    background: transparent;
+    color: lighten($primary-color, 30%);
+    font-size: 4rem;
+    padding: 0;
+    bottom: 60px;
+    width: auto;
+    height: max-content;
+    outline: none;
+  }
+
+  #btnLeft {
+  }
+  #btnRight {
+  }
 
   .secondary-heading {
     margin: 0;
@@ -18,22 +36,23 @@
     overflow: hidden;
 
     .slideshow {
-      width: 3600px;
+      width: 3400px;
       display: flex;
 
       .testimonials-row-block {
         display: flex;
         width: 850px;
         position: relative;
+        transition: all 0.3s ease;
 
         &::after {
           position: absolute;
           content: "‟";
-          left: 15px;
+          left: 30px;
           top: -130px;
           padding: 0;
           margin: 0;
-          color: lighten($primary-color, 35%);
+          color: lighten($primary-color, 40%);
           font-size: 30rem;
           transform: rotate(-20deg);
           z-index: -1;
