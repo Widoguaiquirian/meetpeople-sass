@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* --xl-font: 3rem;
    --lg-font: 2.5rem;
    --md-font: 2rem;
@@ -659,127 +660,83 @@ li {
   }
 }
 .testimonials {
-  background: rgba(181, 181, 181, 0.208);
-  padding: 5rem 0;
-  position: relative;
+  padding: 7rem 2rem;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.testimonials-title {
-  -webkit-background-clip: text;
-  background-image: linear-gradient(#ec672d, #e44d07);
-  color: transparent;
-  display: inline-block;
+.testimonials .secondary-heading {
+  margin: 0;
+  color: #2f4858;
   font-size: clamp(2rem, 3vw, 3.5rem);
-  font-weight: 700;
+  font-weight: bold;
   margin-bottom: 3rem;
   text-align: center;
   text-transform: uppercase;
-  transition: all 0.3s;
   width: 100%;
 }
-.testimonials-box {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 99%;
-  width: 1210px;
-}
-.testimonials-box .slideshow {
-  height: 190px;
-  margin: 0 2rem;
+.testimonials-row {
+  max-width: 850px;
+  height: auto;
   overflow: hidden;
 }
-.testimonials-box .slideshow .testimonials-box-row {
+.testimonials-row .slideshow {
+  width: 3600px;
   display: flex;
-  max-width: 100%;
-  transition: all 0.3s ease-in-out;
 }
-.testimonials-box .testimonials-shape {
-  background: rgba(255, 255, 255, 0.801);
-  border-radius: 5px;
-  border: 1px solid rgba(128, 128, 128, 0.445);
-  box-shadow: 2px 2px 2px #ec672d;
-  height: auto;
-  margin-right: 1.2rem;
-  min-width: 360px;
-  padding: 1rem;
-  padding-left: 4rem;
+.testimonials-row .slideshow .testimonials-row-block {
+  display: flex;
+  width: 850px;
   position: relative;
-  transition: 0.3s;
 }
-.testimonials-box .testimonials-shape-circle {
-  clip-path: circle(50% at 50% 50%);
-  float: left;
-  height: 10rem;
-  margin: 0;
+.testimonials-row .slideshow .testimonials-row-block::after {
+  position: absolute;
+  content: "‟";
+  left: 15px;
+  top: -130px;
   padding: 0;
-  shape-outside: circle(50% at 50% 50%);
-  transform: translateX(-2rem);
-  width: 10rem;
+  margin: 0;
+  color: #fbddd1;
+  font-size: 30rem;
+  transform: rotate(-20deg);
+  z-index: -1;
 }
-.testimonials-box .testimonials-shape-circle img {
+.testimonials-row .slideshow .testimonials-row-block-hero {
+  flex-basis: 50%;
+  padding: 2rem;
+}
+.testimonials-row .slideshow .testimonials-row-block-hero p {
+  font-size: 2rem;
+  margin: 0;
+  position: relative;
+  text-align: justify;
+}
+.testimonials-row .slideshow .testimonials-row-block-hero h3 {
+  font-size: 3rem;
+  margin: 0;
+  position: relative;
+}
+.testimonials-row .slideshow .testimonials-row-block-hero h3 span {
+  position: absolute;
+  font-size: clamp(1.2rem, 1vw, 1.3rem);
+  bottom: -10px;
+  left: 0;
+}
+.testimonials-row .slideshow .testimonials-row-block-img {
+  flex-basis: 50%;
+  margin-left: 1rem;
+  position: relative;
+}
+.testimonials-row .slideshow .testimonials-row-block-img img {
+  border-radius: 5px;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.testimonials-box .testimonials-shape-text {
-  height: 160px;
-}
-.testimonials-box .testimonials-shape-text h3 {
-  margin: 0;
-}
-.testimonials-box .arrows {
-  font-size: 3rem;
-  opacity: 50%;
-  color: #2f4858;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.testimonials-box .arrows:hover {
-  opacity: 100%;
-  transform: scale(1.4);
-}
 
-@media (max-width: 1300px) {
-  .testimonials-box {
-    width: 835px;
-  }
-}
-@media (max-width: 900px) {
-  .testimonials-box {
-    width: 460px;
-  }
-}
-@media (max-width: 510px) {
-  .testimonials-box .arrows {
-    font-size: 1.4rem;
-  }
-  .testimonials-box .slideshow .testimonials-box-row {
-    justify-content: start;
-  }
-  .testimonials-box .slideshow .testimonials-box-row .testimonials-shape {
-    margin-right: 1rem;
-  }
-  .testimonials-box .slideshow .testimonials-box-row .testimonials-shape-circle {
-    width: 5rem;
-    height: 5rem;
-  }
-}
-@media (max-width: 453px) {
-  .testimonials-box .slideshow {
-    height: 235px;
-    margin: 0 0.8rem;
-  }
-  .testimonials-box .slideshow .testimonials-box-row .testimonials-shape {
-    height: 200px;
-    margin-right: 6.8rem;
-    min-width: 302px;
-    padding: 1rem 3rem;
-  }
-  .testimonials-box .slideshow .testimonials-box-row .testimonials-shape-circle {
-    height: 5rem;
-    width: 5rem;
-  }
-}
 .footer {
   background: rgba(181, 181, 181, 0.208);
   padding: 3rem;

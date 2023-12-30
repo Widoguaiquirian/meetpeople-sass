@@ -1,131 +1,78 @@
 .testimonials {
-  background: rgba(181, 181, 181, 0.208);
-  padding: 5rem 0;
-  position: relative;
-  &-title {
-    @include primaryHeading;
+  padding: 7rem 2rem;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .secondary-heading {
+    margin: 0;
+    @include secondaryHeading;
   }
 
-  &-box {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 99%;
-    width: 1210px;
+  &-row {
+    max-width: 850px;
+    height: auto;
+    overflow: hidden;
 
     .slideshow {
-      height: 190px;
-      margin: 0 2rem;
-      overflow: hidden;
-      .testimonials-box-row {
+      width: 3600px;
+      display: flex;
+
+      .testimonials-row-block {
         display: flex;
-        max-width: 100%;
-        transition: all 0.3s ease-in-out;
-      }
-    }
+        width: 850px;
+        position: relative;
 
-    .testimonials-shape {
-      background: rgba(255, 255, 255, 0.801);
-      border-radius: 5px;
-      border: 1px solid rgba(128, 128, 128, 0.445);
-      box-shadow: 2px 2px 2px $primary-color;
-      height: auto;
-      margin-right: 1.2rem;
-      min-width: 360px;
-      padding: 1rem;
-      padding-left: 4rem;
-      position: relative;
-      transition: 0.3s;
-
-      &-circle {
-        clip-path: circle(50% at 50% 50%);
-        float: left;
-        height: 10rem;
-        margin: 0;
-        padding: 0;
-        shape-outside: circle(50% at 50% 50%);
-        transform: translateX(-2rem);
-        width: 10rem;
-
-        img {
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-
-      &-text {
-        height: 160px;
-
-        h3 {
+        &::after {
+          position: absolute;
+          content: "‟";
+          left: 15px;
+          top: -130px;
+          padding: 0;
           margin: 0;
+          color: lighten($primary-color, 35%);
+          font-size: 30rem;
+          transform: rotate(-20deg);
+          z-index: -1;
         }
-      }
-    }
 
-    .arrows {
-      font-size: 3rem;
-      opacity: 50%;
-      color: $quaternary-color;
-      cursor: pointer;
-      transition: all 0.3s ease;
+        &-hero {
+          flex-basis: 50%;
+          padding: 2rem;
 
-      &:hover {
-        opacity: 100%;
-        transform: scale(1.4);
-      }
-    }
-  }
-}
+          p {
+            font-size: 2rem;
+            margin: 0;
+            position: relative;
+            text-align: justify;
+          }
 
-//responsive
-@media (max-width: 1300px) {
-  .testimonials-box {
-    width: 835px;
-  }
-}
-
-@media (max-width: 900px) {
-  .testimonials-box {
-    width: 460px;
-  }
-}
-
-@media (max-width: 510px) {
-  .testimonials-box {
-    .arrows {
-      font-size: 1.4rem;
-    }
-    .slideshow {
-      .testimonials-box-row {
-        justify-content: start;
-        .testimonials-shape {
-          margin-right: 1rem;
-          &-circle {
-            width: 5rem;
-            height: 5rem;
+          h3 {
+            font-size: 3rem;
+            margin: 0;
+            position: relative;
+            span {
+              position: absolute;
+              font-size: clamp(1.2rem, 1vw, 1.3rem);
+              bottom: -10px;
+              left: 0;
+            }
           }
         }
-      }
-    }
-  }
-}
 
-@media (max-width: 453px) {
-  .testimonials-box {
-    .slideshow {
-      height: 235px;
-      margin: 0 0.8rem;
-      .testimonials-box-row {
-        .testimonials-shape {
-          height: 200px;
-          margin-right: 6.8rem;
-          min-width: 302px;
-          padding: 1rem 3rem;
+        &-img {
+          flex-basis: 50%;
+          margin-left: 1rem;
+          position: relative;
 
-          &-circle {
-            height: 5rem;
-            width: 5rem;
+          img {
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
           }
         }
       }

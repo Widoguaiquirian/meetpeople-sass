@@ -20,52 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-//stories slider
-
-const slides = document.querySelector(".testimonials-box-row");
-const btnLeft = document.querySelector(".left-arrow");
-const btnRight = document.querySelector(".right-arrow");
-
-let curSlide = 1;
-
-const prevSlide = function () {
-  curSlide--;
-
-  if (curSlide == 0) {
-    curSlide = 1;
-  } else if (curSlide == 1) {
-    slides.style.transform = "translateX(0)";
-  } else if (curSlide == 2) {
-    slides.style.transform = "translateX(-370px)";
-  } else if (curSlide == 3) {
-    slides.style.transform = "translateX(-740px)";
-  } else if (curSlide == 4) {
-    slides.style.transform = "translateX(-1110px)";
-  } else if (curSlide == 5) {
-    slides.style.transform = "translateX(-1480px)";
-  }
-};
-
-const nextSlide = function () {
-  curSlide++;
-
-  if (curSlide == 2) {
-    slides.style.transform = "translateX(-370px)";
-  } else if (curSlide == 3) {
-    slides.style.transform = "translateX(-741px)";
-  } else if (curSlide == 4) {
-    slides.style.transform = "translateX(-1120px)";
-  } else if (curSlide == 5) {
-    slides.style.transform = "translateX(-1485px)";
-  } else if (curSlide == 6) {
-    slides.style.transform = "translateX(0)";
-    curSlide = 1;
-  }
-};
-
-btnRight.addEventListener("click", nextSlide);
-btnLeft.addEventListener("click", prevSlide);
-
 // mobile menu
 const openMenuMobile = document.querySelector("#nav-btn--open");
 const closeMenuMobile = document.querySelector("#nav-btn--close");
