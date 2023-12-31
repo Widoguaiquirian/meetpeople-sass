@@ -26,6 +26,7 @@
 
     a {
       color: white;
+      font-size: clamp(1.6rem, 2vw, 1.6rem);
 
       &:hover {
         color: darken(white, 40%);
