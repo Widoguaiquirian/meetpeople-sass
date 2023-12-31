@@ -486,16 +486,11 @@ li {
     margin: 1rem 0 1.5rem 0;
   }
 }
-#main {
-  overflow: initial;
-}
-
-.main {
+.main-profile {
   display: flex;
   justify-content: center;
   position: relative;
   overflow: initial;
-  max-width: 98%;
 }
 
 .profile {
@@ -994,7 +989,7 @@ li {
   justify-content: space-around;
   padding: 2rem 1rem;
   position: absolute;
-  width: 100%;
+  width: 100vw;
 }
 .nav a {
   color: white;
@@ -1105,11 +1100,15 @@ li {
 }
 
 .header-profile {
-  background-image: url(../images/people-3-large.jpg);
-  background-position: center 40%;
+  background-image: linear-gradient(to right bottom, rgba(236, 102, 45, 0.3), hsla(350, 69%, 58%, 0.3)), url(../images/people-3-large.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
+  margin: 0 auto;
+  max-width: 3000px;
+  overflow: hidden;
+  position: relative;
 }
 
 .terms {

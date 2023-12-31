@@ -44,8 +44,81 @@
   </head>
 
   <body>
-    <header class="header-profile"></header>
-    <main class="main" id="main">
+    <header class="header-profile">
+      <nav class="nav">
+        <!-- Mobile navigation -->
+        <div class="nav-mobile">
+          <button class="nav-btn-icon" id="nav-btn--close">
+            <i class="fa-solid fa-x"></i>
+          </button>
+          <!-- mobile ul -->
+          <ul class="nav-mobile-ul">
+            <li class="nav-mobile-ul-item">
+              <a href="#" class="nav-mobile-ul-item-link">Find friends</a>
+            </li>
+            <li class="nav-mobile-ul-item">
+              <a href="#" class="nav-mobile-ul-item-link">Login</a>
+            </li>
+            <li class="nav-mobile-ul-item qrMobile">
+              <a href="#" class="nav-mobile-ul-item-link">Download the APP</a>
+              <img src="images/qrcodelg.png" alt="qrcode" />
+            </li>
+          </ul>
+          <div class="nav-mobile-social">
+            <a href="#" class="nav-mobile-ul-item-link"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+            <a href="#" class="nav-mobile-ul-item-link"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="#" class="nav-mobile-ul-item-link"
+              ><i class="fa-brands fa-square-twitter"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Desktop navigation-->
+        <div class="nav-logo nav-logo--desktop">
+          <a href="index.html">
+            <img
+              src="images/logos/logo.svg"
+              alt="hero logo"
+              class="nav-logo-svg"
+          /></a>
+        </div>
+
+        <button class="nav-btn-icon" id="nav-btn--open">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- Desktop navigation-->
+        <div class="nav-desktop">
+          <ul class="nav-desktop-ul">
+            <li class="nav-desktop-ul-item">
+              <a href="#" class="nav-desktop-ul-item-link">Find friends</a>
+            </li>
+            <li class="nav-desktop-ul-item">
+              <a href="#" class="nav-desktop-ul-item-link">Login</a>
+            </li>
+            <li class="nav-desktop-ul-item qr">
+              <a href="#" class="nav-desktop-ul-item-link">Download the APP</a>
+              <img src="images/qrcodelg.png" alt="qrcode" />
+            </li>
+          </ul>
+          <div class="nav-desktop-social">
+            <a href="#" class="nav-desktop-ul-item-link"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+            <a href="#" class="nav-desktop-ul-item-link"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="#" class="nav-desktop-ul-item-link"
+              ><i class="fa-brands fa-square-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main-profile">
       <section class="profile">
         <h1 class="profile-title">Registration page</h1>
         <form class="profile-form">
@@ -194,11 +267,8 @@
             <img src="images/illustration-pictue.svg" alt="about" />
           </figure>
           <div class="aside-info">
-            <h3>Lorem, ipsum.</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              ipsam fuga veritatis eaque, aperiam quis.
-            </p>
+            <h3>Create your profile</h3>
+            <p>We will find the perfect match for you.</p>
           </div>
         </div>
       </aside>
