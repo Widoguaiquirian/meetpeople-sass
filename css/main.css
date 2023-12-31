@@ -682,25 +682,25 @@ li {
   }
 }
 .testimonials {
-  padding: 7rem 2rem;
-  margin-bottom: 10rem;
-  width: 100%;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  margin-bottom: 10rem;
+  padding: 7rem 2rem;
   position: relative;
+  width: 100%;
 }
 .testimonials .testimonials-btn {
-  position: absolute;
   background: transparent;
+  bottom: 60px;
   color: #f9cdb9;
   font-size: 5rem;
-  padding: 0;
-  bottom: 60px;
-  width: auto;
   height: max-content;
   outline: none;
+  padding: 0;
+  position: absolute;
+  width: auto;
 }
 .testimonials #btnLeft {
   transform: translateX(-12rem) translateY(1.2rem);
@@ -725,19 +725,19 @@ li {
   width: 100%;
 }
 .testimonials-row {
-  max-width: 850px;
   height: auto;
+  max-width: 850px;
   overflow: hidden;
 }
 .testimonials-row .slideshow {
-  width: 3400px;
   display: flex;
+  width: 3400px;
 }
 .testimonials-row .slideshow .testimonials-row-block {
   display: flex;
-  width: 850px;
   position: relative;
   transition: all 0.3s ease;
+  width: 850px;
 }
 .testimonials-row .slideshow .testimonials-row-block::after {
   position: absolute;
@@ -759,18 +759,19 @@ li {
   font-size: 2rem;
   margin: 0;
   position: relative;
-  text-align: justify;
+  text-align: left;
 }
 .testimonials-row .slideshow .testimonials-row-block-hero h3 {
   font-size: 3rem;
+  font-size: clamp(2rem, 1vw, 2.5rem);
   margin: 0;
   position: relative;
 }
 .testimonials-row .slideshow .testimonials-row-block-hero h3 span {
-  position: absolute;
-  font-size: clamp(1.2rem, 1vw, 1.3rem);
   bottom: -10px;
+  font-size: clamp(1.2rem, 1vw, 1.3rem);
   left: 0;
+  position: absolute;
 }
 .testimonials-row .slideshow .testimonials-row-block-img {
   flex-basis: 50%;
@@ -792,9 +793,9 @@ li {
     width: 1480px;
   }
   .testimonials-row .slideshow .testimonials-row-block {
-    width: 370px;
     display: flex;
     flex-direction: column;
+    width: 370px;
   }
 }
 .footer {
