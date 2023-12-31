@@ -7,6 +7,7 @@
   justify-content: center;
   position: relative;
   overflow: initial;
+  max-width: 98%;
 }
 
 .profile {
@@ -150,6 +151,60 @@
     label {
       flex-wrap: wrap;
       margin-right: 1rem;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+
+    .profile {
+      padding: 1rem 0;
+
+      .profile-form {
+        max-width: 98%;
+
+        fieldset:nth-child(1) {
+          height: 750px;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+  .aside {
+    margin: 0 auto 5rem auto;
+
+    height: auto;
+
+    &-wrapp {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .main {
+    .profile {
+      .profile-form {
+        fieldset:nth-child(1) {
+          height: 820px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .main {
+    .profile {
+      .profile-form {
+        fieldset:nth-child(1) {
+          height: 850px;
+        }
+      }
     }
   }
 }
