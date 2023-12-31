@@ -45,148 +45,165 @@
 
   <body>
     <header class="header-profile"></header>
-    <section class="profile">
-      <h1 class="profile-title">Registration page</h1>
-      <form class="profile-form">
-        <fieldset>
-          <legend>Let's start with the basics</legend>
-          <!-- Username -->
-          <div class="profile-form-row">
-            <label for="username">Username <span class="star">*</span></label>
-            <input type="text" name="username" id="username" required />
-          </div>
-          <!-- Name -->
-          <div class="profile-form-row">
-            <label for="name">Name <span class="star">*</span></label>
-            <input type="text" name="name" id="names" required />
-          </div>
-          <!-- Email -->
-          <div class="profile-form-row">
-            <label for="email">Email <span class="star">*</span></label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Hello@gmail.com"
-              required
-            />
-          </div>
-          <!-- Password -->
-          <div class="profile-form-row">
-            <label for="password">Enter password</label>
-            <input type="password" required />
-          </div>
-          <!-- Password x2 -->
-          <div class="profile-form-row">
-            <label for="password">Repeat password</label>
-            <input type="password" required />
-          </div>
-
-          <!-- Interests -->
-          <div class="profile-form-row-interests">
-            <label class="title-label" for="interests">Looking for:</label>
-            <div class="profile-form-row-interests-options">
-              <label class="local">
-                <input type="checkbox" name="local" value="local" />
-                Local friends
-              </label>
-              <label class="global">
-                <input type="checkbox" name="global" value="global" />
-                Friends worldwide
-              </label>
-              <label class="pets">
-                <input type="checkbox" name="pets" value="pets" />
-                Friends with pets
-              </label>
-              <label class="kids">
-                <input type="checkbox" name="kids" value="kids" />
-                Friends with kids
-              </label>
-              <label class="excercise">
-                <input type="checkbox" name="excercise" value="excercise" />
-                Excercise friends
-              </label>
-              <label class="club">
-                <input type="checkbox" name="club" value="club" />
-                Join/start a club
-              </label>
-              <label class="night">
-                <input type="checkbox" name="night" value="night" />
-                Plans for tonight
-              </label>
-              <label class="double">
-                <input type="checkbox" name="double" value="double" />
-                Go double date
-              </label>
-              <label class="eating">
-                <input type="checkbox" name="eating" value="eating" />
-                Eating out
-              </label>
-              <label class="others">
-                <input type="checkbox" name="others" value="others" />
-                Others
-              </label>
+    <main class="main" id="main">
+      <section class="profile">
+        <h1 class="profile-title">Registration page</h1>
+        <form class="profile-form">
+          <fieldset>
+            <legend>Let's start with the basics</legend>
+            <!-- Username -->
+            <div class="profile-form-row">
+              <label for="username">Username <span class="star">*</span></label>
+              <input type="text" name="username" id="username" required />
             </div>
-          </div>
+            <!-- Name -->
+            <div class="profile-form-row">
+              <label for="name">Name <span class="star">*</span></label>
+              <input type="text" name="name" id="names" required />
+            </div>
+            <!-- Email -->
+            <div class="profile-form-row">
+              <label for="email">Email <span class="star">*</span></label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Hello@gmail.com"
+                required
+              />
+            </div>
+            <!-- Password -->
+            <div class="profile-form-row">
+              <label for="password">Enter password</label>
+              <input type="password" required />
+            </div>
+            <!-- Password x2 -->
+            <div class="profile-form-row">
+              <label for="password">Repeat password</label>
+              <input type="password" required />
+            </div>
 
-          <!-- Date of birth -->
-          <div class="profile-form-row">
-            <label for="date">Date of birth</label>
-            <input type="date" required />
-          </div>
-          <!-- Gender -->
-          <div class="profile-form-row">
-            <label for="gender">Gender <span class="star">*</span></label>
-            <select name="gender" id="gender" required>
-              <option value=" " selected></option>
-              <option value="male">Male</option>
-              <option value="females">Female</option>
-              <option value="couple">Couple</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <!-- Country -->
-          <div class="profile-form-row">
-            <label for="country">Country</label>
-            <select name="countries" id="countries"></select>
-          </div>
-          <!-- city -->
-          <div class="profile-form-row">
-            <label for="city">City <span class="star">*</span></label>
-            <input type="text" name="city" id="city" required />
-          </div>
-          <!-- Photo -->
-          <div class="profile-form-row">
-            <label for="photo"
-              >Your profile picture <span class="star">*</span></label
+            <!-- Interests -->
+            <div class="profile-form-row-interests">
+              <label class="title-label" for="interests">Looking for:</label>
+              <div class="profile-form-row-interests-options">
+                <label class="local">
+                  <input type="checkbox" name="local" value="local" />
+                  Local friends
+                </label>
+                <label class="global">
+                  <input type="checkbox" name="global" value="global" />
+                  Friends worldwide
+                </label>
+                <label class="pets">
+                  <input type="checkbox" name="pets" value="pets" />
+                  Friends with pets
+                </label>
+                <label class="kids">
+                  <input type="checkbox" name="kids" value="kids" />
+                  Friends with kids
+                </label>
+                <label class="excercise">
+                  <input type="checkbox" name="excercise" value="excercise" />
+                  Excercise friends
+                </label>
+                <label class="club">
+                  <input type="checkbox" name="club" value="club" />
+                  Join/start a club
+                </label>
+                <label class="night">
+                  <input type="checkbox" name="night" value="night" />
+                  Plans for tonight
+                </label>
+                <label class="double">
+                  <input type="checkbox" name="double" value="double" />
+                  Go double date
+                </label>
+                <label class="eating">
+                  <input type="checkbox" name="eating" value="eating" />
+                  Eating out
+                </label>
+                <label class="others">
+                  <input type="checkbox" name="others" value="others" />
+                  Others
+                </label>
+              </div>
+            </div>
+
+            <!-- Date of birth -->
+            <div class="profile-form-row">
+              <label for="date">Date of birth</label>
+              <input type="date" required />
+            </div>
+            <!-- Gender -->
+            <div class="profile-form-row">
+              <label for="gender">Gender <span class="star">*</span></label>
+              <select name="gender" id="gender" required>
+                <option value=" " selected></option>
+                <option value="male">Male</option>
+                <option value="females">Female</option>
+                <option value="couple">Couple</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <!-- Country -->
+            <div class="profile-form-row">
+              <label for="country">Country</label>
+              <select name="countries" id="countries"></select>
+            </div>
+            <!-- city -->
+            <div class="profile-form-row">
+              <label for="city">City <span class="star">*</span></label>
+              <input type="text" name="city" id="city" required />
+            </div>
+            <!-- Photo -->
+            <div class="profile-form-row">
+              <label for="photo"
+                >Your profile picture <span class="star">*</span></label
+              >
+              <input type="file" name="photo" id="photo" required />
+            </div>
+            <!-- About me -->
+            <div class="profile-form-row">
+              <label for="about">About me:</label>
+              <textarea
+                name="about"
+                id="about"
+                rows="10"
+                placeholder="Write about you, your interests and what you want."
+              ></textarea>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Termds and security</legend>
+            <a class="terms-btn" href="terms.html"
+              >Read the terms and conditions <span class="star">*</span></a
             >
-            <input type="file" name="photo" id="photo" required />
-          </div>
-          <!-- About me -->
-          <div class="profile-form-row">
-            <label for="about">About me:</label>
-            <textarea
-              name="about"
-              id="about"
-              rows="10"
-              placeholder="Write about you, your interests and what you want."
-            ></textarea>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Termds and security</legend>
-          <a class="terms-btn" href="terms.html"
-            >Read the terms and conditions <span class="star">*</span></a
-          >
-          <label class="terms">
-            <input type="checkbox" name="terms" value="terms" />
-            I have read terms and conditions!
-          </label>
-        </fieldset>
+            <label class="terms">
+              <input type="checkbox" name="terms" value="terms" />
+              I have read terms and conditions!
+            </label>
+          </fieldset>
 
-        <button class="submit-btn" type="submit">Create profile</button>
-      </form>
-    </section>
+          <button class="submit-btn" type="submit">Create profile</button>
+        </form>
+      </section>
+      <aside class="aside">
+        <div class="aside-wrapp">
+          <figure>
+            <img src="images/illustration-pictue.svg" alt="about" />
+          </figure>
+          <div class="aside-info">
+            <h3>Lorem, ipsum.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              ipsam fuga veritatis eaque, aperiam quis.
+            </p>
+          </div>
+        </div>
+      </aside>
+    </main>
+
     <footer class="footer">
       <section class="footer-hero">
         <div class="footer-hero-block">
