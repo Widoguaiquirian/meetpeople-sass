@@ -1,4 +1,4 @@
-# Luis Guaiquirian
+# LuisGcode.
 
 ## 📜 MEETPeople project 📜
 
