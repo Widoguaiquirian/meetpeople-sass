@@ -21,10 +21,10 @@
     justify-content: center;
 
     &-block {
-      background: gray;
       border-radius: 5px;
+      border: 1px solid rgba(255, 255, 255, 0.192);
       height: clamp(35px, 3vw, 80px);
-      margin: 0 1rem;
+      margin: 0 0.5rem;
       padding: calc(0.1rem + 0.5rem);
       width: clamp(35px, 3vw, 80px);
 
