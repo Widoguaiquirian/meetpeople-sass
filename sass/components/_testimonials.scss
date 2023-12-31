@@ -12,7 +12,7 @@
     position: absolute;
     background: transparent;
     color: lighten($primary-color, 30%);
-    font-size: 4rem;
+    font-size: 5rem;
     padding: 0;
     bottom: 60px;
     width: auto;
@@ -21,8 +21,18 @@
   }
 
   #btnLeft {
+    transform: translateX(-12rem) translateY(1.2rem);
+    // animation-name: leftArrow;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
   }
   #btnRight {
+    transform: translateX(-8rem) translateY(1.2rem);
+    // animation-name: rightArrow;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
   }
 
   .secondary-heading {
@@ -94,6 +104,21 @@
             object-fit: cover;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .testimonials-row {
+    width: 370px;
+
+    .slideshow {
+      width: 1480px;
+      .testimonials-row-block {
+        width: 370px;
+        display: flex;
+        flex-direction: column;
       }
     }
   }

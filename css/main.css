@@ -156,6 +156,28 @@ li {
     top: -6rem;
   }
 }
+@keyframes leftArrow {
+  0% {
+    transform: translateX(-12rem) translateY(1.2rem);
+  }
+  50% {
+    transform: translateX(-11.5rem) translateY(1.2rem);
+  }
+  100% {
+    transform: translateX(-12rem) translateY(1.2rem);
+  }
+}
+@keyframes rightArrow {
+  0% {
+    transform: translateX(-7rem) translateY(1.2rem);
+  }
+  50% {
+    transform: translateX(-7.5rem) translateY(1.2rem);
+  }
+  100% {
+    transform: translateX(-7rem) translateY(1.2rem);
+  }
+}
 .app {
   background: rgba(181, 181, 181, 0.208);
   padding: 3rem;
@@ -673,12 +695,24 @@ li {
   position: absolute;
   background: transparent;
   color: #f9cdb9;
-  font-size: 4rem;
+  font-size: 5rem;
   padding: 0;
   bottom: 60px;
   width: auto;
   height: max-content;
   outline: none;
+}
+.testimonials #btnLeft {
+  transform: translateX(-12rem) translateY(1.2rem);
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+.testimonials #btnRight {
+  transform: translateX(-8rem) translateY(1.2rem);
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
 }
 .testimonials .secondary-heading {
   margin: 0;
@@ -750,6 +784,19 @@ li {
   object-fit: cover;
 }
 
+@media (max-width: 860px) {
+  .testimonials-row {
+    width: 370px;
+  }
+  .testimonials-row .slideshow {
+    width: 1480px;
+  }
+  .testimonials-row .slideshow .testimonials-row-block {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .footer {
   background: rgba(181, 181, 181, 0.208);
   padding: 3rem;

@@ -64,9 +64,17 @@ const testimonials = document.querySelectorAll(".testimonials-row-block");
 
 let idx = 0;
 
+btnRight.style.animationName = "rightArrow";
+btnLeft.style.animationName = "";
+
 const changeImage = function () {
   if (idx > testimonials.length - 1) {
     idx = 0;
+    btnLeft.style.animationName = "";
+  } else if (idx < 1) {
+    idx = 0;
+  } else if (idx >= 1) {
+    btnLeft.style.animationName = "leftArrow";
   }
 
   testimonials.forEach(function (testimonial) {
