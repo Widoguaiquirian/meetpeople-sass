@@ -2,8 +2,7 @@
 
 ## 📜 MEETPeople project 📜
 
-Responsive website with functional links. Mainly for Sass practice and some Js. 
-https://luisgcode.github.io/meetpeople-sass/
+Responsive website with functional links. Mainly Sass and Js. 
 
 ## 👨‍💻 Used Technologies 👨‍💻
 
